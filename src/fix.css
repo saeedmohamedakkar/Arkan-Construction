@@ -349,3 +349,7 @@ select[name="select-796"]{
 }
 
 
+.textBlack {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(6%) saturate(120%) hue-rotate(175deg);
+ }
+
