@@ -343,3 +343,16 @@ select[name="select-796"]{
 #e-text-path-6c46554 {
     letter-spacing: 0 !important;
 }
+
+#e-text-path-6c46554 {
+    letter-spacing: normal !important;
+}
+
+#e-text-path-6c46554 {
+    font-family: "Cairo", sans-serif !important;
+}
+
+#e-text-path-6c46554 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
