@@ -339,3 +339,10 @@ select[name="select-796"]{
 
 .text-centr{text-align:center;
 }
+
+@media (max-width: 768px) {
+    #e-text-path-6c46554 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
