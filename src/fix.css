@@ -340,26 +340,3 @@ select[name="select-796"]{
 .text-centr{text-align:center;
 }
 
-/* /////////////////////////////////////////////////////// */
- @media (max-width: 768px) {
-    #e-text-path-6c46554 {
-        font-size: 10px !important;
-        letter-spacing: 1px !important;
-    }
-
-  }
-
-
-  @media (max-width: 768px) {
-    .elementor-widget-text-path svg {
-        transform: scale(0.85);
-    }
-  }
-
-
-  @media (max-width: 768px) {
-    #e-path-6c46554 {
-        transform: scale(1.15);
-        transform-origin: center;
-    }
-}
