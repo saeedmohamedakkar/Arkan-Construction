@@ -340,14 +340,27 @@ select[name="select-796"]{
 .text-centr{text-align:center;
 }
 
+/* ظظظظظظظظظظظظظظظظظظظظظظظظظظظظ */
+
+#e-path-6c46554,
 #e-text-path-6c46554 {
+    vector-effect: non-scaling-stroke;
+}
+
+.elementor-widget-text-path svg {
+    width: 100% !important;
+    height: auto !important;
+}
+
+#e-text-path-6c46554 {
+    font-family: "Cairo", "Tajawal", sans-serif !important;
     letter-spacing: 0 !important;
+    font-kerning: normal;
 }
 
-#e-text-path-6c46554 {
-    letter-spacing: normal !important;
-}
-
-#e-text-path-6c46554 {
-    font-family: "Cairo", sans-serif !important;
+@media (max-width: 768px) {
+    .elementor-widget-text-path svg {
+        transform: scale(1);
+        transform-origin: center;
+    }
 }
