@@ -1,0 +1,338 @@
+/* Keep the page from showing a horizontal scrollbar while preserving
+ * Elementor's intended container widths. */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* Replicate Elementor Pro's sticky widget for the "selected projects"
+ * stacked-scroll effect. The original page used elementor-sticky.js
+ * (jquery.sticky-kit); CSS position: sticky reproduces the same visual. */
+.spaciaz-root .elementor-element.elementor-sticky {
+  position: sticky;
+  bottom: 0;
+}
+
+/* Parallax: smooth GPU transforms */
+.spaciaz-root .elementor-motion-effects-element {
+  will-change: transform;
+  transition: transform var(--e-transform-transition-duration, 100ms) linear;
+}
+.primaryBackGcolor{background-color: #1E4FA8 !important;}
+
+.primaryColor{color: #1E4FA8 !important;}
+
+.textColorWhite{color: white !important;}
+
+.whiteBackground:hover{background-color: #f8f8f8 !important;}
+
+.underLine {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.underLine::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1E4FA8;
+  transition: width 0.35s ease;
+  
+}
+
+.underLine:hover::after {
+  width: 100%;
+}
+.my{margin:10px 0 10px 0 !important;}
+
+.iconsColor{ color: #1E4FA8;
+  fill: currentColor;}
+
+ 
+.fixingAlignment {
+  direction: rtl;
+  text-align: right;
+}
+
+.myt{margin:10px 0 10px 0 !important;}
+
+/* Scrolling marquee widgets: use the brand blue for the pill border only. */
+.spaciaz-root .elementor-widget-spaciaz-slide-scrolling > .elementor-widget-container {
+  border-color: #1E4FA8 !important;
+}
+
+.showServesLink{color: black!important;}
+
+.showServesLink:hover{
+    color: white !important;
+    background-color:#1E4FA8 !important;
+}
+
+/* Testimonial swiper arrows: show the prev/next label text (it was hidden
+ * by Elementor's screen-reader-only class) and give the buttons a real,
+ * clickable pill area so the Swiper navigation can be pressed. */
+.spaciaz-root .elementor-swiper-button.showServesLink {
+  width: auto;
+  height: auto;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 15px;
+  border: 1px solid #1E4FA8;
+  border-radius: 999px;
+  background-color: #fff;
+  white-space: nowrap;
+  z-index: 5;
+  pointer-events: auto;
+  transition: color .2s ease, background-color .2s ease;
+}
+
+.spaciaz-root .elementor-swiper-button.showServesLink .swiper-btn-label {
+  display: inline-block;
+  line-height: 1;
+}
+
+.spaciaz-root .elementor-swiper-button.showServesLink .spaciaz-icon-chevron-left,
+.spaciaz-root .elementor-swiper-button.showServesLink .spaciaz-icon-chevron-right {
+  font-size: 14px;
+}
+
+.whyUsIconsColr{background-color: #1E4FA8 !important;}
+
+.secondryColor{color: gold !important;}
+
+.custom-arrow{
+    display:inline-block;
+    width: 7px;
+    height:7px;
+    border-left:2px solid currentColor;
+    border-bottom:2px solid currentColor;
+    transform:rotate(45deg);
+}
+
+.arrow-prev{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-top:2px solid currentColor;
+    border-right:2px solid currentColor;
+    transform:rotate(45deg);
+}
+
+span.wpcf7-form-control-wrap[data-name="select-796"]{
+    position: relative !important;
+    display: block !important;
+}
+select[name="select-796"]{
+    width: 100% !important;
+    padding-right: 35px !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+select[name="select-796"]{
+    background-image: none !important;
+}
+
+
+::selection {
+    color: white!important;
+    background: #0B2755!important;
+}
+
+.hovering:hover{color: #1E4FA8 !important;}
+
+.textWhite{color:#f8f8f8}
+
+/* ============================================================
+   Header / navbar responsive fix
+   ------------------------------------------------------------
+   The header row (.elementor-element-0c592e6) is a space-between
+   flex bar sized for a 1730px content width. Its pieces switch on
+   mismatched Elementor breakpoints:
+     - hamburger container .elementor-element-5ce7fd2  -> visible only <=1024px
+       (hidden-desktop + hidden-laptop + hidden-tablet_extra)
+     - .menu-mobile-nav-button (vendor)                -> display:none at >=1024px
+     - desktop nav .elementor-element-0ab291e          -> visible >=1025px
+   So in the 1025px–~1500px band the full desktop menu, logo, contact
+   heading, phone and CTA are crammed onto one row (overflow / wrap /
+   collapse) while the hamburger is still hidden — the ~1450px break.
+
+   Below switches the navbar to mobile behavior at <=1450px: show the
+   hamburger button, hide the cramped desktop menu. True desktop
+   (>1450px) and existing mobile (<=1024px) behavior are unchanged.
+   ============================================================ */
+@media (max-width: 1450px) {
+  /* Reveal the hamburger/canvas-menu container (overrides the Elementor
+     hidden-desktop / hidden-laptop / hidden-tablet_extra utility classes). */
+  .elementor-64 .elementor-element.elementor-element-5ce7fd2 {
+    display: flex !important;
+  }
+
+  /* Reveal the hamburger button itself (overrides vendor
+     @media(min-width:1024px){.menu-mobile-nav-button{display:none}}). */
+  .elementor-64 .menu-mobile-nav-button {
+    display: block !important;
+  }
+
+  /* Hide the full desktop navigation so it can no longer wrap/collapse. */
+  .elementor-64 .elementor-element.elementor-element-0ab291e {
+    display: none !important;
+  }
+
+  /* Keep the header on a single, non-wrapping row. */
+  .elementor-64 .elementor-element.elementor-element-0c592e6 {
+    --flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
+.test{color:#D4D8DE
+}
+
+/* ============================================================
+   Footer responsive compacting (#colophon / .elementor-264)
+   ------------------------------------------------------------
+   On small screens the footer grew very tall because of:
+     - the decorative giant heading "أركان" (070acd4): 20vw font
+       size + negative margins, which also overlapped the footer
+       link columns and swallowed their clicks ("navbar
+       unresponsive").
+     - large stacked paddings/margins on every footer section
+       (5a95f09, c201cb5, efcb9ae, 4f089ac, 0d37bed, d3c6f63).
+   The rules below override Elementor's CSS custom properties so
+   the desktop layout (>1024px) is left untouched.
+   ============================================================ */
+
+/* The big decorative heading is purely visual. Stop it from
+   intercepting pointer events so the footer links beneath its
+   negative margins stay clickable on every screen size. */
+.elementor-264 .elementor-element.elementor-element-070acd4,
+.elementor-264 .elementor-element.elementor-element-070acd4 h3 {
+  pointer-events: none;
+}
+
+/* ---- Tablet band (<=1024px): gentle tightening ---- */
+@media (max-width: 1024px) {
+  .elementor-264 .elementor-element.elementor-element-5a54819 {
+    --padding-bottom: 16px !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-9b61af5 {
+    --spacer-size: 24px !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-5a95f09 > .elementor-widget-container {
+    margin: 40px 0 10px 0 !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-c201cb5 {
+    --padding-top: 30px !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-0d37bed {
+    --padding-top: 30px !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-d3c6f63 > .elementor-widget-container {
+    margin: 20px 0 20px 0 !important;
+  }
+}
+
+/* ---- Mobile / small tablet (<=767px): compact layout ---- */
+@media (max-width: 767px) {
+  /* Parent footer container: trim bottom padding. */
+  .elementor-264 .elementor-element.elementor-element-5a54819 {
+    --padding-bottom: 12px !important;
+  }
+
+  /* Top white rounded spacer. */
+  .elementor-264 .elementor-element.elementor-element-9b61af5 {
+    --spacer-size: 16px !important;
+  }
+
+  /* "هل تبحث عن شريك..." heading + paragraph: smaller offsets. */
+  .elementor-264 .elementor-element.elementor-element-5a95f09 > .elementor-widget-container {
+    margin: 24px 0 8px 0 !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-1b6cec8 > .elementor-widget-container {
+    margin: 0 0 16px 0 !important;
+  }
+
+  /* Decorative giant "أركان": shrink so it no longer dominates the
+     viewport height, and remove the leftover negative margin. */
+  .elementor-264 .elementor-element.elementor-element-070acd4 h3 {
+    font-size: clamp(40px, 16vw, 72px) !important;
+    line-height: 1 !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-070acd4 > .elementor-widget-container {
+    margin: 0 0 -6px 0 !important;
+  }
+
+  /* Inner content card. */
+  .elementor-264 .elementor-element.elementor-element-c201cb5 {
+    --padding-top: 20px !important;
+  }
+
+  /* Link-columns grid: less bottom padding under the stacked lists so the
+     contact block (phone/email/social) rises into view with them. */
+  .elementor-264 .elementor-element.elementor-element-efcb9ae {
+    --padding-bottom: 10px !important;
+  }
+
+  /* Logo / about column. */
+  .elementor-264 .elementor-element.elementor-element-026da09 {
+    --padding-bottom: 10px !important;
+  }
+
+  /* Quick-links columns wrapper: tighten the box around the two link lists. */
+  .elementor-264 .elementor-element.elementor-element-4f089ac {
+    --padding-top: 14px !important;
+    --padding-bottom: 14px !important;
+    --gap: 20px 20px !important;
+    --row-gap: 20px !important;
+    --column-gap: 20px !important;
+  }
+
+  /* Icon-list rows: smaller vertical rhythm inside each link column. */
+  .elementor-264 .elementor-element.elementor-element-dc12851 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child),
+  .elementor-264 .elementor-element.elementor-element-a4051a6 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+    padding-block-end: 5px !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-dc12851 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child),
+  .elementor-264 .elementor-element.elementor-element-a4051a6 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+    margin-block-start: 5px !important;
+  }
+
+  /* Contact / social column: this had a large 65px top gap upstream —
+     shrink it so phone, email and social sit right under the links. */
+  .elementor-264 .elementor-element.elementor-element-0d37bed {
+    --padding-top: 12px !important;
+    --gap: 12px 12px !important;
+    --row-gap: 12px !important;
+  }
+
+  /* Phone / email buttons: tighter line-height + gap so the block is shorter. */
+  .elementor-264 .elementor-element.elementor-element-cde9e9a {
+    --gap: 6px 6px !important;
+    --row-gap: 6px !important;
+  }
+  .elementor-264 .elementor-element.elementor-element-1e556fc .elementor-button,
+  .elementor-264 .elementor-element.elementor-element-97ca8b0 .elementor-button {
+    line-height: 1.15em !important;
+  }
+
+  /* Copyright line: was 40px top + 40px bottom. */
+  .elementor-264 .elementor-element.elementor-element-d3c6f63 > .elementor-widget-container {
+    margin: 12px 0 12px 0 !important;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .test2 {
+    height: fit-content;
+  }
+}
+
+.theLogo{width:80px;
+}

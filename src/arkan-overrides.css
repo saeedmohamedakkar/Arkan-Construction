@@ -1,0 +1,202 @@
+/* ============================================================
+   Arkan overrides — fonts + palette only (Spaciaz layout intact)
+   ============================================================ */
+
+/* Bahij (Arabic) — primary UI font */
+@font-face {
+  font-family: 'Bahij';
+  src: url('/fonts/Bahij_TheSansArabic-ExtraLight.ttf') format('truetype');
+  font-weight: 200; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Bahij';
+  src: url('/fonts/Bahij_TheSansArabic-Light.ttf') format('truetype');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Bahij';
+  src: url('/fonts/Bahij_TheSansArabic-Plain.ttf') format('truetype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Bahij';
+  src: url('/fonts/Bahij_TheSansArabic-SemiLight.ttf') format('truetype');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Bahij';
+  src: url('/fonts/Bahij_TheSansArabic-SemiBold.ttf') format('truetype');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Bahij';
+  src: url('/fonts/Bahij_TheSansArabic-Bold.ttf') format('truetype');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Bahij';
+  src: url('/fonts/Bahij_TheSansArabic-ExtraBold.ttf') format('truetype');
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Bahij';
+  src: url('/fonts/Bahij_TheSansArabic-Black.ttf') format('truetype');
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+/* Myriad Pro (Latin) — used for English passages / ISO codes / numerics */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/fonts/MyriadPro-Light.otf') format('opentype');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/fonts/MYRIADPRO-SEMIBOLD.OTF') format('opentype');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/fonts/MYRIADPRO-BOLD.OTF') format('opentype');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* ============================================================
+   Typography
+   Spaciaz uses --e-global-typography-text-font-family / -accent
+   for body and headings. Remap both to Bahij with Myriad as
+   the Latin fallback so Arabic glyphs use Bahij and ASCII
+   numerals / English words fall back to Myriad cleanly.
+   ============================================================ */
+
+:root,
+body {
+  --e-global-typography-text-font-family: 'Bahij', 'Myriad Pro', 'Segoe UI', Tahoma, sans-serif;
+  --e-global-typography-accent-font-family: 'Bahij', 'Myriad Pro', 'Segoe UI', Tahoma, sans-serif;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea,
+.spaciaz-root,
+.spaciaz-root * {
+  font-family: 'Bahij', 'Myriad Pro', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Anything explicitly tagged English uses Myriad first */
+[lang='en'],
+.latin,
+.spaciaz-root [lang='en'],
+.spaciaz-root .latin {
+  font-family: 'Myriad Pro', 'Bahij', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* ============================================================
+   Palette — remap Spaciaz CSS variables to Arkan colors.
+   Keeping the same variable names means every existing rule
+   (buttons, borders, hover states, gradients) recolors itself.
+   ============================================================ */
+
+body {
+  --primary: #1E4FA8;          /* Bright logo blue — primary actions/accents */
+  --primary_hover: #123A7A;    /* Deep brand blue — gradients/key surfaces */
+  --text: #111827;             /* Charcoal */
+  --text_light: #4B5563;
+  --accent: #111827;           /* Charcoal — deep contrast blocks */
+  --border: #A7ADB5;           /* Concrete gray — secondary marks/dividers */
+  --background: #FFFFFF;
+  --background_light: #F6F7F9;
+  --dark: #111827;
+}
+
+/* Spaciaz uses a near-black primary text on light bg. The original
+ * theme used a yellow-green primary that worked on dark accents; with
+ * blue-on-blue we need readable contrast on primary-colored buttons. */
+.spaciaz-root .elementor-button,
+.spaciaz-root .btn-primary,
+.spaciaz-root .movingButton .elementor-button-link {
+  color: #FFFFFF;
+}
+
+.spaciaz-root .elementor-button:hover,
+.spaciaz-root .btn-primary:hover {
+  color: #FFFFFF;
+  background-color: var(--primary_hover);
+}
+
+/* Some Spaciaz components hard-code the old yellow (#E4ED64) directly.
+ * Translate the most visible cases. */
+.spaciaz-root .c-primary,
+.spaciaz-root .color-primary,
+.spaciaz-root .scrolling-title .c-primary {
+  color: var(--primary) !important;
+}
+
+.spaciaz-root .bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.spaciaz-root .bd-primary,
+.spaciaz-root .bd-t-primary,
+.spaciaz-root .bd-b-primary,
+.spaciaz-root .bd-l-primary,
+.spaciaz-root .bd-r-primary {
+  border-color: var(--primary) !important;
+}
+
+/* Arabic numerics inside the counter widget look better in Myriad's
+ * tabular figures when written with ASCII digits. */
+.spaciaz-root .elementor-counter-number,
+.spaciaz-root .elementor-counter-number-suffix,
+.spaciaz-root .elementor-counter-number-prefix {
+  font-family: 'Myriad Pro', 'Bahij', sans-serif;
+  font-feature-settings: 'tnum' 1;
+}
+
+/* ============================================================
+   Project showcase (style-6) — responsive thumbnail fix
+   ------------------------------------------------------------
+   .project-item.project-style-6 is a two-column flex: a ~380px text
+   column beside a `flex:0 0 50%` thumbnail whose height comes from a
+   hard-coded pixel padding-top (1080/600/450px). On narrow screens the
+   text column eats the row, squeezing the thumbnail to a near-zero-width
+   sliver, so the image collapses to an invisible strip. Stack the layout
+   and give the image a real, fluid aspect ratio instead.
+   ============================================================ */
+@media (max-width: 1024px) {
+  .spaciaz-root .project-item.project-style-6 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .spaciaz-root .project-item.project-style-6 .project-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .spaciaz-root .project-item.project-style-6 .project-post-thumbnail {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0 !important;   /* drop the fixed-px aspect hack */
+    aspect-ratio: 16 / 9;
+    min-height: 220px;
+  }
+
+  .spaciaz-root .project-item.project-style-6 .project-post-thumbnail img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
