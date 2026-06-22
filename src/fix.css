@@ -331,6 +331,8 @@ select[name="select-796"]{
 @media (max-width: 768px) {
   .test2 {
     height: fit-content;
+        direction: rtl;
+    unicode-bidi: bidi-override;
   }
 }
 
@@ -341,12 +343,12 @@ select[name="select-796"]{
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #e-path-6c46554,
     #e-text-path-6c46554 {
         display: none !important;
     }
-}
+} */
 
 
 .textBlack {
