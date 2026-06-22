@@ -331,8 +331,7 @@ select[name="select-796"]{
 @media (max-width: 768px) {
   .test2 {
     height: fit-content;
-        direction: rtl;
-    unicode-bidi: bidi-override;
+
   }
 }
 
@@ -355,3 +354,7 @@ select[name="select-796"]{
   filter: brightness(0) saturate(100%) invert(69%) sepia(6%) saturate(120%) hue-rotate(175deg);
  }
 
+/* .test5{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+} */
