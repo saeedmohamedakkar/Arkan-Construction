@@ -1,18 +1,5 @@
 @charset "UTF-8";
-/*!
-Theme Name:   Spaciaz
-Theme URI:    https://demo2.wpopal.com/spaciaz/
-Author:       Opalthemes
-Author URI:   https://wpopal.com/
-Description:  Spaciaz is a powerful and professional WordPress theme designed specifically for businesses in the real estate and construction industries. Whether you're running an architecture firm, a construction company, a property development group, or a real estate agency, Spaciaz offers everything you need to create a strong online presence.
-Version:      1.2.3
-License:      GNU General Public License v2 or later
-License URI:  https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:  spaciaz
-Tested up to: 6.7
-Requires PHP: 7.4
-Tags:         architecture, builder, building, company, construction, construction group, constructor, contractor, corporate, property, real estate, real estate agency, real estate agent, realtor
-*/
+
 @font-face {
   font-family: "Switzer";
   src: url("./assets/fonts/new/Switzer-Regular.eot");
