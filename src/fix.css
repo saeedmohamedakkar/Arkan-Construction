@@ -18,13 +18,22 @@ body {
   will-change: transform;
   transition: transform var(--e-transform-transition-duration, 100ms) linear;
 }
-.primaryBackGcolor{background-color: #1E4FA8 !important;}
 
-.primaryColor{color: #1E4FA8 !important;}
+.primaryBackGcolor {
+  background-color: #1E4FA8 !important;
+}
 
-.textColorWhite{color: white !important;}
+.primaryColor {
+  color: #1E4FA8 !important;
+}
 
-.whiteBackground:hover{background-color: #f8f8f8 !important;}
+.textColorWhite {
+  color: white !important;
+}
+
+.whiteBackground:hover {
+  background-color: #f8f8f8 !important;
+}
 
 .underLine {
   position: relative;
@@ -41,35 +50,44 @@ body {
   height: 1px;
   background-color: #1E4FA8;
   transition: width 0.35s ease;
-  
+
 }
 
 .underLine:hover::after {
   width: 100%;
 }
-.my{margin:10px 0 10px 0 !important;}
 
-.iconsColor{ color: #1E4FA8;
-  fill: currentColor;}
+.my {
+  margin: 10px 0 10px 0 !important;
+}
 
- 
+.iconsColor {
+  color: #1E4FA8;
+  fill: currentColor;
+}
+
+
 .fixingAlignment {
   direction: rtl;
   text-align: right;
 }
 
-.myt{margin:10px 0 10px 0 !important;}
+.myt {
+  margin: 10px 0 10px 0 !important;
+}
 
 /* Scrolling marquee widgets: use the brand blue for the pill border only. */
-.spaciaz-root .elementor-widget-spaciaz-slide-scrolling > .elementor-widget-container {
+.spaciaz-root .elementor-widget-spaciaz-slide-scrolling>.elementor-widget-container {
   border-color: #1E4FA8 !important;
 }
 
-.showServesLink{color: black!important;}
+.showServesLink {
+  color: black !important;
+}
 
-.showServesLink:hover{
-    color: white !important;
-    background-color:#1E4FA8 !important;
+.showServesLink:hover {
+  color: white !important;
+  background-color: #1E4FA8 !important;
 }
 
 /* Testimonial swiper arrows: show the prev/next label text (it was hidden
@@ -100,52 +118,62 @@ body {
   font-size: 14px;
 }
 
-.whyUsIconsColr{background-color: #1E4FA8 !important;}
-
-.secondryColor{color: gold !important;}
-
-.custom-arrow{
-    display:inline-block;
-    width: 7px;
-    height:7px;
-    border-left:2px solid currentColor;
-    border-bottom:2px solid currentColor;
-    transform:rotate(45deg);
+.whyUsIconsColr {
+  background-color: #1E4FA8 !important;
 }
 
-.arrow-prev{
-    display:inline-block;
-    width:10px;
-    height:10px;
-    border-top:2px solid currentColor;
-    border-right:2px solid currentColor;
-    transform:rotate(45deg);
+.secondryColor {
+  color: gold !important;
 }
 
-span.wpcf7-form-control-wrap[data-name="select-796"]{
-    position: relative !important;
-    display: block !important;
+.custom-arrow {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
 }
-select[name="select-796"]{
-    width: 100% !important;
-    padding-right: 35px !important;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
+
+.arrow-prev {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
 }
-select[name="select-796"]{
-    background-image: none !important;
+
+span.wpcf7-form-control-wrap[data-name="select-796"] {
+  position: relative !important;
+  display: block !important;
+}
+
+select[name="select-796"] {
+  width: 100% !important;
+  padding-right: 35px !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+select[name="select-796"] {
+  background-image: none !important;
 }
 
 
 ::selection {
-    color: white!important;
-    background: #0B2755!important;
+  color: white !important;
+  background: #0B2755 !important;
 }
 
-.hovering:hover{color: #1E4FA8 !important;}
+.hovering:hover {
+  color: #1E4FA8 !important;
+}
 
-.textWhite{color:#f8f8f8}
+.textWhite {
+  color: #f8f8f8
+}
 
 /* ============================================================
    Header / navbar responsive fix
@@ -166,6 +194,7 @@ select[name="select-796"]{
    (>1450px) and existing mobile (<=1024px) behavior are unchanged.
    ============================================================ */
 @media (max-width: 1450px) {
+
   /* Reveal the hamburger/canvas-menu container (overrides the Elementor
      hidden-desktop / hidden-laptop / hidden-tablet_extra utility classes). */
   .elementor-64 .elementor-element.elementor-element-5ce7fd2 {
@@ -190,7 +219,8 @@ select[name="select-796"]{
   }
 }
 
-.test{color:#D4D8DE
+.test {
+  color: #D4D8DE
 }
 
 /* ============================================================
@@ -220,25 +250,31 @@ select[name="select-796"]{
   .elementor-264 .elementor-element.elementor-element-5a54819 {
     --padding-bottom: 16px !important;
   }
+
   .elementor-264 .elementor-element.elementor-element-9b61af5 {
     --spacer-size: 24px !important;
   }
-  .elementor-264 .elementor-element.elementor-element-5a95f09 > .elementor-widget-container {
+
+  .elementor-264 .elementor-element.elementor-element-5a95f09>.elementor-widget-container {
     margin: 40px 0 10px 0 !important;
   }
+
   .elementor-264 .elementor-element.elementor-element-c201cb5 {
     --padding-top: 30px !important;
   }
+
   .elementor-264 .elementor-element.elementor-element-0d37bed {
     --padding-top: 30px !important;
   }
-  .elementor-264 .elementor-element.elementor-element-d3c6f63 > .elementor-widget-container {
+
+  .elementor-264 .elementor-element.elementor-element-d3c6f63>.elementor-widget-container {
     margin: 20px 0 20px 0 !important;
   }
 }
 
 /* ---- Mobile / small tablet (<=767px): compact layout ---- */
 @media (max-width: 767px) {
+
   /* Parent footer container: trim bottom padding. */
   .elementor-264 .elementor-element.elementor-element-5a54819 {
     --padding-bottom: 12px !important;
@@ -250,10 +286,11 @@ select[name="select-796"]{
   }
 
   /* "هل تبحث عن شريك..." heading + paragraph: smaller offsets. */
-  .elementor-264 .elementor-element.elementor-element-5a95f09 > .elementor-widget-container {
+  .elementor-264 .elementor-element.elementor-element-5a95f09>.elementor-widget-container {
     margin: 24px 0 8px 0 !important;
   }
-  .elementor-264 .elementor-element.elementor-element-1b6cec8 > .elementor-widget-container {
+
+  .elementor-264 .elementor-element.elementor-element-1b6cec8>.elementor-widget-container {
     margin: 0 0 16px 0 !important;
   }
 
@@ -263,7 +300,8 @@ select[name="select-796"]{
     font-size: clamp(40px, 16vw, 72px) !important;
     line-height: 1 !important;
   }
-  .elementor-264 .elementor-element.elementor-element-070acd4 > .elementor-widget-container {
+
+  .elementor-264 .elementor-element.elementor-element-070acd4>.elementor-widget-container {
     margin: 0 0 -6px 0 !important;
   }
 
@@ -297,6 +335,7 @@ select[name="select-796"]{
   .elementor-264 .elementor-element.elementor-element-a4051a6 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
     padding-block-end: 5px !important;
   }
+
   .elementor-264 .elementor-element.elementor-element-dc12851 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child),
   .elementor-264 .elementor-element.elementor-element-a4051a6 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
     margin-block-start: 5px !important;
@@ -315,13 +354,14 @@ select[name="select-796"]{
     --gap: 6px 6px !important;
     --row-gap: 6px !important;
   }
+
   .elementor-264 .elementor-element.elementor-element-1e556fc .elementor-button,
   .elementor-264 .elementor-element.elementor-element-97ca8b0 .elementor-button {
     line-height: 1.15em !important;
   }
 
   /* Copyright line: was 40px top + 40px bottom. */
-  .elementor-264 .elementor-element.elementor-element-d3c6f63 > .elementor-widget-container {
+  .elementor-264 .elementor-element.elementor-element-d3c6f63>.elementor-widget-container {
     margin: 12px 0 12px 0 !important;
   }
 }
@@ -335,10 +375,12 @@ select[name="select-796"]{
   }
 }
 
-.theLogo{width:80px;
+.theLogo {
+  width: 80px;
 }
 
-.text-centr{text-align:center;
+.text-centr {
+  text-align: center;
 }
 
 
@@ -352,9 +394,23 @@ select[name="select-796"]{
 
 .textBlack {
   filter: brightness(0) saturate(100%) invert(69%) sepia(6%) saturate(120%) hue-rotate(175deg);
- }
+}
 
 
 #consultation {
-    scroll-margin-top: 150px;
+  scroll-margin-top: 150px;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.go-home-button a {
+  color: white;
+  text-decoration: none;
 }
