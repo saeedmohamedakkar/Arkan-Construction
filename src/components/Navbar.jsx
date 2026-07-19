@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react'
-
+import { Link } from "react-router-dom";
 const defaultDropdownState = {
   0: false,
   1: false,
@@ -77,13 +77,27 @@ export default function Navbar() {
                   <div className="elementor-element elementor-element-6afc8cc elementor-widget elementor-widget-site-logo" data-id="6afc8cc" data-element_type="widget" data-settings='{"align":"center","width":{"unit":"%","size":"","sizes":[]},"width_laptop":{"unit":"px","size":"","sizes":[]},"width_tablet_extra":{"unit":"px","size":"","sizes":[]},"width_tablet":{"unit":"%","size":"","sizes":[]},"width_mobile_extra":{"unit":"px","size":"","sizes":[]},"width_mobile":{"unit":"%","size":"","sizes":[]},"space":{"unit":"%","size":"","sizes":[]},"space_laptop":{"unit":"px","size":"","sizes":[]},"space_tablet_extra":{"unit":"px","size":"","sizes":[]},"space_tablet":{"unit":"%","size":"","sizes":[]},"space_mobile_extra":{"unit":"px","size":"","sizes":[]},"space_mobile":{"unit":"%","size":"","sizes":[]},"image_border_radius":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_laptop":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_tablet_extra":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_tablet":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_mobile_extra":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_mobile":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true}}'>
                     <div className="elementor-widget-container">
                       <div className="hfe-site-logo">
-                        <a data-elementor-open-lightbox="" className="elementor-clickable" href="#">
+                        {/* <a data-elementor-open-lightbox="" className="elementor-clickable" href="#">
                           <div className="hfe-site-logo-set">
                             <div className="hfe-site-logo-container">
                               <img fetchPriority="high" width="100" height="100" className="theLogo" src="/assets/arkan-logo.png" alt="logo" />
                             </div>
                           </div>
-                        </a>
+                        </a> */}
+                        <Link to="/">
+                          <div className="hfe-site-logo-set">
+                            <div className="hfe-site-logo-container">
+                              <img
+                                fetchPriority="high"
+                                width="100"
+                                height="100"
+                                className="theLogo"
+                                src="/assets/arkan-logo.png"
+                                alt="logo"
+                              />
+                            </div>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -94,7 +108,12 @@ export default function Navbar() {
                           <div className="primary-navigation">
                             <ul id="menu-1-0ab291e" className="menu">
                               <li id="menu-item-70" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-70 sub-menu-center has-mega-menu">
-                                <a href="#"><span className="hover-text" data-name="الرئيسية">الرئيسية</span></a>
+                                {/* <a href="#"><span className="hover-text" data-name="الرئيسية">الرئيسية</span></a> */}
+                                <Link to="/">
+                                  <span className="hover-text" data-name="الرئيسية">
+                                    الرئيسية
+                                  </span>
+                                </Link>
                               </li>
                               <li id="menu-item-71" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71">
                                 <a href="#"><span className="hover-text" data-name="من نحن">من نحن</span></a>

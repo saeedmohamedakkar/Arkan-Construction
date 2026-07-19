@@ -11,7 +11,7 @@ function NotFound() {
                 <h1>This Page is Not Exist !</h1>
 
 
-                <button className="go-home-button"><Link to="/">الرجوع الي الصفحة الرئيسية</Link></button>
+                <Link className="go-home-button" to="/">الرجوع الي الصفحة الرئيسية</Link>
 
 
 

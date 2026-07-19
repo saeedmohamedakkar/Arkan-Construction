@@ -410,7 +410,20 @@ select[name="select-796"] {
   text-align: center;
 }
 
-.go-home-button a {
+
+.go-home-button{
+  background-color: #1E4FA8;
   color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
   text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.go-home-button:hover {
+  background-color: #0B2755;
+  color: white;
 }
