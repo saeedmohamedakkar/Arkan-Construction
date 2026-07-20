@@ -208,8 +208,8 @@ export default function Navbar() {
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-70">
                   {/* <a href="#" aria-current="page">الرئيسية</a> */}
                   <Link to="/" aria-current="page">
-  الرئيسية
-</Link>
+                    الرئيسية
+                  </Link>
                   {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[0])} className={`dropdown-toggle${openDropdowns[0] ? ' toggled-on' : ''}`} onClick={toggleDropdown(0)} /> */}
                   {/* <ul className="sub-menu" style={{ display: openDropdowns[0] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-41 current_page_item menu-item-69"><a href="#" aria-current="page">الرئيسية</a></li>
@@ -235,8 +235,8 @@ export default function Navbar() {
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71">
                   <a href="#">من نحن</a>
-                  <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[1])} className={`dropdown-toggle${openDropdowns[1] ? ' toggled-on' : ''}`} onClick={toggleDropdown(1)} />
-                  <ul className="sub-menu" style={{ display: openDropdowns[1] ? 'block' : 'none' }}>
+                  {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[1])} className={`dropdown-toggle${openDropdowns[1] ? ' toggled-on' : ''}`} onClick={toggleDropdown(1)} /> */}
+                  {/* <ul className="sub-menu" style={{ display: openDropdowns[1] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="#">من نحن</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="#">قيمنا</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="#">الاعتمادات والجودة</a></li>
@@ -245,35 +245,35 @@ export default function Navbar() {
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="#">الوظائف</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="#">الأسئلة الشائعة</a></li>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a href="#">صفحة الخطأ</a></li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72">
                   <a href="#">خدماتنا وحلولنا</a>
-                  <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[2])} className={`dropdown-toggle${openDropdowns[2] ? ' toggled-on' : ''}`} onClick={toggleDropdown(2)} />
+                  {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[2])} className={`dropdown-toggle${openDropdowns[2] ? ' toggled-on' : ''}`} onClick={toggleDropdown(2)} />
                   <ul className="sub-menu" style={{ display: openDropdowns[2] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568"><a href="#">تجهيز المنشآت المصرفية</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2567"><a href="#">حلول القطاع الطبي</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2566"><a href="#">الإنشاءات والبنية التحتية</a></li>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2569"><a href="#">الحلول الكهروميكانيكية MEP</a></li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73">
                   <a href="#">سابقة الأعمال</a>
-                  <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[3])} className={`dropdown-toggle${openDropdowns[3] ? ' toggled-on' : ''}`} onClick={toggleDropdown(3)} />
+                  {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[3])} className={`dropdown-toggle${openDropdowns[3] ? ' toggled-on' : ''}`} onClick={toggleDropdown(3)} />
                   <ul className="sub-menu" style={{ display: openDropdowns[3] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-4709"><a href="#">سابقة الأعمال</a></li>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-4837"><a href="#">المشاريع الاستراتيجية</a></li>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-4714"><a href="#">تفاصيل المشروع</a></li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-271">
                   <a href="#">الاعتمادات والجودة</a>
-                  <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[4])} className={`dropdown-toggle${openDropdowns[4] ? ' toggled-on' : ''}`} onClick={toggleDropdown(4)} />
+                  {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[4])} className={`dropdown-toggle${openDropdowns[4] ? ' toggled-on' : ''}`} onClick={toggleDropdown(4)} />
                   <ul className="sub-menu" style={{ display: openDropdowns[4] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2573"><a href="#">شهادات الجودة</a></li>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2574"><a href="#">الاعتمادات</a></li>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-3078"><a href="#">تفاصيل الاعتماد</a></li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77">
                   {/* <a href="#">اتصل بنا</a> */}
