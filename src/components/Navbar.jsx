@@ -108,7 +108,7 @@ export default function Navbar() {
                           <div className="primary-navigation">
                             <ul id="menu-1-0ab291e" className="menu">
                               <li id="menu-item-70" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-70 sub-menu-center has-mega-menu">
-                                {/* <a href="#"><span className="hover-text" data-name="الرئيسية">الرئيسية</span></a> */}
+
                                 <Link to="/">
                                   <span className="hover-text" data-name="الرئيسية">
                                     الرئيسية
@@ -127,8 +127,16 @@ export default function Navbar() {
                               <li id="menu-item-271" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-271">
                                 <a href="#"><span className="hover-text" data-name="الاعتمادات والجودة">الاعتمادات والجودة</span></a>
                               </li>
-                              <li id="menu-item-77" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77">
-                                <a href="#"><span className="hover-text" data-name="اتصل بنا">اتصل بنا</span></a>
+
+                              <li
+                                id="menu-item-77"
+                                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"
+                              >
+                                <Link to="/contact">
+                                  <span className="hover-text" data-name="اتصل بنا">
+                                    اتصل بنا
+                                  </span>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -157,11 +165,21 @@ export default function Navbar() {
                   <div className="elementor-element elementor-element-ad5cd6d elementor-widget elementor-widget-button" data-id="ad5cd6d" data-element_type="widget" data-widget_type="button.default">
                     <div className="elementor-widget-container ">
                       <div className="elementor-button-wrapper">
-                        <a className="elementor-button elementor-button-link elementor-size-sm textColorWhite" href="#consultation">
+                        {/* <a className="elementor-button elementor-button-link elementor-size-sm textColorWhite" href="#consultation">
                           <span className="elementor-button-content-wrapper ">
                             <span className="elementor-button-text">اطلب استشارة فنية</span>
                           </span>
-                        </a>
+                        </a> */}
+                        <Link
+                          to="/contact"
+                          className="elementor-button elementor-button-link elementor-size-sm textColorWhite"
+                        >
+                          <span className="elementor-button-content-wrapper">
+                            <span className="elementor-button-text">
+                              اطلب استشارة فنية
+                            </span>
+                          </span>
+                        </Link>
                       </div>
                     </div>
                   </div>
