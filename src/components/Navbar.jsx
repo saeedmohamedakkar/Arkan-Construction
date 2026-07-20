@@ -128,16 +128,16 @@ export default function Navbar() {
                                 <a href="#"><span className="hover-text" data-name="الاعتمادات والجودة">الاعتمادات والجودة</span></a>
                               </li>
 
-                              <li
+                              {/* <li
                                 id="menu-item-77"
                                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"
-                              >
-                                <Link to="/contact">
-                                  <span className="hover-text" data-name="اتصل بنا">
-                                    اتصل بنا
-                                  </span>
-                                </Link>
-                              </li>
+                              > */}
+                              <Link to="/contact">
+                                <span className="hover-text" data-name="اتصل بنا">
+                                  اتصل بنا
+                                </span>
+                              </Link>
+                              {/* </li> */}
                             </ul>
                           </div>
                         </nav>
@@ -165,11 +165,7 @@ export default function Navbar() {
                   <div className="elementor-element elementor-element-ad5cd6d elementor-widget elementor-widget-button" data-id="ad5cd6d" data-element_type="widget" data-widget_type="button.default">
                     <div className="elementor-widget-container ">
                       <div className="elementor-button-wrapper">
-                        {/* <a className="elementor-button elementor-button-link elementor-size-sm textColorWhite" href="#consultation">
-                          <span className="elementor-button-content-wrapper ">
-                            <span className="elementor-button-text">اطلب استشارة فنية</span>
-                          </span>
-                        </a> */}
+
                         <Link
                           to="/contact"
                           className="elementor-button elementor-button-link elementor-size-sm textColorWhite"
@@ -210,9 +206,12 @@ export default function Navbar() {
             <div className="handheld-navigation">
               <ul id="menu-main-menu" className="menu">
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-70">
-                  <a href="#" aria-current="page">الرئيسية</a>
-                  <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[0])} className={`dropdown-toggle${openDropdowns[0] ? ' toggled-on' : ''}`} onClick={toggleDropdown(0)} />
-                  <ul className="sub-menu" style={{ display: openDropdowns[0] ? 'block' : 'none' }}>
+                  {/* <a href="#" aria-current="page">الرئيسية</a> */}
+                  <Link to="/" aria-current="page">
+  الرئيسية
+</Link>
+                  {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[0])} className={`dropdown-toggle${openDropdowns[0] ? ' toggled-on' : ''}`} onClick={toggleDropdown(0)} /> */}
+                  {/* <ul className="sub-menu" style={{ display: openDropdowns[0] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-41 current_page_item menu-item-69"><a href="#" aria-current="page">الرئيسية</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="#">من نحن</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="#">خدماتنا وحلولنا</a></li>
@@ -222,8 +221,17 @@ export default function Navbar() {
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-7633"><a href="#">الوظائف</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-8894"><a href="#">الأسئلة الشائعة</a></li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-9715"><a href="#">قيمنا</a></li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-9716"><a href="#">اتصل بنا</a></li>
-                  </ul>
+                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-9716">
+                      
+                      <Link to="/contact">
+                                  <span className="hover-text" data-name="اتصل بنا">
+                                    اتصل بنا
+                                  </span>
+                                </Link>
+
+
+                    </li>
+                  </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71">
                   <a href="#">من نحن</a>
@@ -267,7 +275,14 @@ export default function Navbar() {
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-3078"><a href="#">تفاصيل الاعتماد</a></li>
                   </ul>
                 </li>
-                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="#">اتصل بنا</a></li>
+                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77">
+                  {/* <a href="#">اتصل بنا</a> */}
+                  <Link to="/contact">
+                    <span className="hover-text" data-name="اتصل بنا">
+                      اتصل بنا
+                    </span>
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
