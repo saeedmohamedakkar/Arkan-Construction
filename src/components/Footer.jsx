@@ -235,7 +235,7 @@ export default function Footer() {
                                 </li>
                                 <li className="elementor-icon-list-item">
 
-                                  <Link onClick={() =>
+                                  {/* <Link onClick={() =>
                                     window.scrollTo({
                                       top: 0,
                                       behavior: "smooth",
@@ -244,6 +244,16 @@ export default function Footer() {
                                     <span className="elementor-icon-list-text">
                                       تواصل معنا
                                     </span>
+                                  </Link> */}
+                                  <Link
+                                    to="/contact"
+                                    onClick={() => {
+                                      requestAnimationFrame(() => {
+                                        window.scrollTo(0, 0);
+                                      });
+                                    }}
+                                  >
+                                    تواصل معنا
                                   </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">

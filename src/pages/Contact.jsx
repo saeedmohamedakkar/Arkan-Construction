@@ -274,9 +274,24 @@ const Contact = () => {
                             <div className="map-overlay">
                                 <p className="info-label fixingAlignment" style={{ marginBottom: '0.25rem' }}>مقر أركان الرئيسي</p>
                                 <p style={{ fontSize: '12px', color: 'var(--on-surface-variant)', margin: 0 }}>حي القدس، طريق الملك عبدالله، الرياض</p>
-                                <a className="fixingAlignment" href="#" style={{ marginTop: '0.75rem', display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--primary)', fontWeight: '700', textDecoration: 'none' }}>
+
+                                <a
+                                    href="https://maps.google.com/?q=24.7136,46.6753"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="fixingAlignment"
+                                    style={{
+                                        marginTop: "0.75rem",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "4px",
+                                        fontSize: "12px",
+                                        color: "var(--primary)",
+                                        fontWeight: "700",
+                                        textDecoration: "none",
+                                    }}
+                                >
                                     فتح في خرائط جوجل
-                                    {/* <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span> */}
                                 </a>
                             </div>
                             <div className="pin">
