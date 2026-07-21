@@ -57,7 +57,7 @@ export default function Navbar() {
           ARKAN<a href="#" title="ARKAN" rel="home" />
         </p>
         <div data-elementor-type="wp-post" data-elementor-id="64" className="elementor elementor-64 header-absolute">
-          <div className="elementor-element elementor-element-572157d e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="572157d" data-element_type="container">
+          <div className="elementor-element elementor-element-572157d e-flex e-con-boxed e-con e-parent e-lazyloaded " data-id="572157d" data-element_type="container">
             <div className="e-con-inner">
               <div className="elementor-element elementor-element-0c592e6 e-con-full e-flex e-con e-child" data-id="0c592e6" data-element_type="container" data-settings='{"background_background":"classic"}'>
                 <div className="elementor-element elementor-element-5ce7fd2 e-con-full elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet_extra e-flex e-con e-child" data-id="5ce7fd2" data-element_type="container">
@@ -73,7 +73,7 @@ export default function Navbar() {
                     </div>
                   </div>
                 </div>
-                <div className="elementor-element elementor-element-6c47215 e-con-full e-flex e-con e-child" data-id="6c47215" data-element_type="container">
+                <div className="elementor-element elementor-element-6c47215 e-con-full e-flex e-con e-child " data-id="6c47215" data-element_type="container">
                   <div className="elementor-element elementor-element-6afc8cc elementor-widget elementor-widget-site-logo" data-id="6afc8cc" data-element_type="widget" data-settings='{"align":"center","width":{"unit":"%","size":"","sizes":[]},"width_laptop":{"unit":"px","size":"","sizes":[]},"width_tablet_extra":{"unit":"px","size":"","sizes":[]},"width_tablet":{"unit":"%","size":"","sizes":[]},"width_mobile_extra":{"unit":"px","size":"","sizes":[]},"width_mobile":{"unit":"%","size":"","sizes":[]},"space":{"unit":"%","size":"","sizes":[]},"space_laptop":{"unit":"px","size":"","sizes":[]},"space_tablet_extra":{"unit":"px","size":"","sizes":[]},"space_tablet":{"unit":"%","size":"","sizes":[]},"space_mobile_extra":{"unit":"px","size":"","sizes":[]},"space_mobile":{"unit":"%","size":"","sizes":[]},"image_border_radius":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_laptop":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_tablet_extra":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_tablet":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_mobile_extra":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"image_border_radius_mobile":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true}}'>
                     <div className="elementor-widget-container">
                       <div className="hfe-site-logo">
@@ -116,10 +116,18 @@ export default function Navbar() {
                                 </Link>
                               </li>
                               <li id="menu-item-71" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71">
-                                <a href="#"><span className="hover-text" data-name="من نحن">من نحن</span></a>
+
+                                <Link to="/who-we-are"><span className="hover-text" data-name="من نحن">من نحن</span></Link>
                               </li>
                               <li id="menu-item-72" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72">
-                                <a href="#"><span className="hover-text" data-name="خدماتنا وحلولنا">خدماتنا وحلولنا</span></a>
+                                <Link
+                                  to="/services"
+
+                                >
+                                  <span className="hover-text" data-name="خدماتنا وحلولنا">
+                                    خدماتنا وحلولنا
+                                  </span>
+                                </Link>
                               </li>
                               <li id="menu-item-73" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73">
                                 <a href="#"><span className="hover-text" data-name="سابقة الأعمال">سابقة الأعمال</span></a>
@@ -128,16 +136,16 @@ export default function Navbar() {
                                 <a href="#"><span className="hover-text" data-name="الاعتمادات والجودة">الاعتمادات والجودة</span></a>
                               </li>
 
-                              {/* <li
+                              <li
                                 id="menu-item-77"
                                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"
-                              > */}
-                              <Link to="/contact">
-                                <span className="hover-text" data-name="اتصل بنا">
-                                  اتصل بنا
-                                </span>
-                              </Link>
-                              {/* </li> */}
+                              >
+                                <Link to="/contact">
+                                  <span className="hover-text" data-name="اتصل بنا">
+                                    اتصل بنا
+                                  </span>
+                                </Link>
+                              </li>
                             </ul>
                           </div>
                         </nav>
@@ -234,21 +242,20 @@ export default function Navbar() {
                   </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71">
-                  <a href="#">من نحن</a>
-                  {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[1])} className={`dropdown-toggle${openDropdowns[1] ? ' toggled-on' : ''}`} onClick={toggleDropdown(1)} /> */}
-                  {/* <ul className="sub-menu" style={{ display: openDropdowns[1] ? 'block' : 'none' }}>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="#">من نحن</a></li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="#">قيمنا</a></li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="#">الاعتمادات والجودة</a></li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="#">المكتب الفني</a></li>
-                    <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="#">عضو الفريق</a></li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="#">الوظائف</a></li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="#">الأسئلة الشائعة</a></li>
-                    <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a href="#">صفحة الخطأ</a></li>
-                  </ul> */}
+                 
+                  <Link to="/who-we-are">من نحن</Link>
+
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72">
-                  <a href="#">خدماتنا وحلولنا</a>
+                 
+                    <Link
+                                  to="/services"
+
+                                >
+                                  <span className="hover-text" data-name="خدماتنا وحلولنا">
+                                    خدماتنا وحلولنا
+                                  </span>
+                                </Link>
                   {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[2])} className={`dropdown-toggle${openDropdowns[2] ? ' toggled-on' : ''}`} onClick={toggleDropdown(2)} />
                   <ul className="sub-menu" style={{ display: openDropdowns[2] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568"><a href="#">تجهيز المنشآت المصرفية</a></li>

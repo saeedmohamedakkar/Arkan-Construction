@@ -168,11 +168,16 @@ export default function Footer() {
                             <div className="elementor-widget-container">
                               <ul className="elementor-icon-list-items fixingAlignment">
                                 <li className="elementor-icon-list-item">
-                                  <a href="#">
-                                    <span className="elementor-icon-list-text ">
+
+                                  <Link onClick={() => {
+                                    requestAnimationFrame(() => {
+                                      window.scrollTo(0, 0);
+                                    });
+                                  }} to="/who-we-are">
+                                    <span className="elementor-icon-list-text">
                                       من نحن
                                     </span>
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
                                   <a href="#">
@@ -227,24 +232,23 @@ export default function Footer() {
                                   </a>
                                 </li>
                                 <li className="elementor-icon-list-item">
-                                  <a href="#">
+
+                                  <Link
+                                    to="/services"
+                                    onClick={() => {
+                                      requestAnimationFrame(() => {
+                                        window.scrollTo(0, 0);
+                                      });
+                                    }}
+                                  >
                                     <span className="elementor-icon-list-text">
                                       حلول MEP
                                     </span>
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
 
-                                  {/* <Link onClick={() =>
-                                    window.scrollTo({
-                                      top: 0,
-                                      behavior: "smooth",
-                                    })
-                                  } to="/contact">
-                                    <span className="elementor-icon-list-text">
-                                      تواصل معنا
-                                    </span>
-                                  </Link> */}
+
                                   <Link
                                     to="/contact"
                                     onClick={() => {

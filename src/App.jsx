@@ -74,41 +74,42 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-
+import WhoWeAre from "./pages/WhoWeAre";
+import OurServices from "./pages/OurServices";
 
 function App() {
-  
-useEffect(() => {
-  const root = document;
 
-  const swipers = initSwipers(root);
+  useEffect(() => {
+    const root = document;
 
-  const cleanups = [
-    initCounters(root),
-    initStickyHeader(root),
-    initReadingProgress(root),
-    initScrollToTop(root),
-    initReveals(root),
-    initCursorButtons(root),
-    initParallax(root),
-    initMobileNav(root),
-  ];
+    const swipers = initSwipers(root);
 
-  return () => {
-    swipers.forEach((s) => {
-      try {
-        s.destroy(true, true);
-      } catch {}
-    });
+    const cleanups = [
+      initCounters(root),
+      initStickyHeader(root),
+      initReadingProgress(root),
+      initScrollToTop(root),
+      initReveals(root),
+      initCursorButtons(root),
+      initParallax(root),
+      initMobileNav(root),
+    ];
 
-    cleanups.forEach((fn) => {
-      try {
-        fn?.();
-      } catch {}
-    });
-  };
-}, []);
- 
+    return () => {
+      swipers.forEach((s) => {
+        try {
+          s.destroy(true, true);
+        } catch { }
+      });
+
+      cleanups.forEach((fn) => {
+        try {
+          fn?.();
+        } catch { }
+      });
+    };
+  }, []);
+
   return (
 
     <BrowserRouter>
@@ -117,6 +118,8 @@ useEffect(() => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/who-we-are" element={<WhoWeAre />} />
+         <Route path="/services" element={<OurServices />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
