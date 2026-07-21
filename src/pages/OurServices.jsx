@@ -121,21 +121,21 @@ const OurServices = () => {
                             <h2 className="section-title-small">لماذا تضع المؤسسات الكبرى ثقتها في أركان؟</h2>
                             <div className="diff-list">
                                 <div className="diff-item">
-                                    <span className="diff-number">01</span>
+                                    <span className="diff-number">1</span>
                                     <div className="diff-text">
                                         <h4>بيئات العمل الحساسة </h4>
                                         <p>نمتلك خبرة استثنائية في العمل داخل المستشفيات والبنوك والمطارات دون تعطيل سير العمل اليومي، مع مراعاة كافة ضوابط الأمان.</p>
                                     </div>
                                 </div>
                                 <div className="diff-item">
-                                    <span className="diff-number">02</span>
+                                    <span className="diff-number">2</span>
                                     <div className="diff-text">
                                         <h4>المعايير الدولية والمحلية</h4>
                                         <p>التزام صارم بكود البناء السعودي (SBC) وحاصلون على شهادات الأيزو (ISO) لضمان جودة هندسية غير قابلة للمساومة.</p>
                                     </div>
                                 </div>
                                 <div className="diff-item">
-                                    <span className="diff-number">03</span>
+                                    <span className="diff-number">3</span>
                                     <div className="diff-text">
                                         <h4>السرعة والدقة التقنية</h4>
                                         <p>يدعمنا مكتب فني محترف يستخدم أحدث تقنيات النمذجة لضمان تسليم المشاريع وفق الجداول الزمنية المخطط لها بدقة.</p>
