@@ -1,5 +1,5 @@
 import "./PreviousWork.css";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -46,7 +46,7 @@ function PreviousWork() {
         <>
 
 
- 
+
 
 
 
@@ -66,7 +66,7 @@ function PreviousWork() {
                             </p>
                             <button className="btn-secondary">تحميل ملف سابقة الأعمال الكامل </button>
                         </div>
-                       
+
                     </div>
                 </section>
 
@@ -74,7 +74,7 @@ function PreviousWork() {
                 <section className="filter-section">
                     <div className="container">
                         <div className="filter-tabs">
-                         
+
                             <button className="filter-tab">المشاريع المصرفية</button>
                             <button className="filter-tab">المشاريع الطبية</button>
                             <button className="filter-tab">البنية التحتية</button>
@@ -87,7 +87,7 @@ function PreviousWork() {
                 <section className="projects-section">
                     <div className="container ">
                         <div className="textCenter"><h2 className="section-title">دراسات الحالة المختارة</h2></div>
-                        
+
                         <div className="projects-grid">
                             {projects.map((project) => (
                                 <div key={project.id} className="project-card">
@@ -145,7 +145,14 @@ function PreviousWork() {
                                 لقد أثبتنا كفاءتنا في أصعب المواقع الإنشائية والحساسة. فريقنا جاهز لدراسة مخططات مشروعك القادم وتقديم عرض فني متكامل.
                             </p>
                             <div className="cta-actions">
-                                <button className="btn-secondary">اطلب استشارة فنية الآن</button>
+                                {/* <button className="btn-secondary">اطلب استشارة فنية الآن</button> */}
+                                <Link onClick={() => {
+                                    requestAnimationFrame(() => {
+                                        window.scrollTo(0, 0);
+                                    });
+                                }} to="/contact" className="btn-secondary">
+                                    اطلب استشارة فنية الآن
+                                </Link>
                                 <span className="micro-text ">انضم إلى قائمة عملائنا المميزين مثل مصرف الراجحي ووزارة الصحة.</span>
                             </div>
                         </div>
