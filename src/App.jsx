@@ -53,7 +53,6 @@
 
 
 
-// ظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظ
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -77,6 +76,11 @@ import Contact from "./pages/Contact";
 import WhoWeAre from "./pages/WhoWeAre";
 import OurServices from "./pages/OurServices";
 import PreviousWork from "./pages/PreviousWork";
+import AccreditationsAndQuality from "./pages/AccreditationsAndQuality";
+
+
+
+
 
 function App() {
 
@@ -122,6 +126,7 @@ function App() {
         <Route path="/who-we-are" element={<WhoWeAre />} />
         <Route path="/services" element={<OurServices />} />
         <Route path="/previous-work" element={<PreviousWork />} />
+        <Route path="/accreditations-and-quality" element={<AccreditationsAndQuality />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 

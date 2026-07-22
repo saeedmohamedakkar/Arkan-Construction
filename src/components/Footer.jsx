@@ -192,11 +192,20 @@ export default function Footer() {
                                   </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
-                                  <a href="#">
+                                  {/* <a href="#">
                                     <span className="elementor-icon-list-text">
                                       شهادات الجودة
                                     </span>
-                                  </a>
+                                  </a> */}
+                                  <Link onClick={() => {
+                                    requestAnimationFrame(() => {
+                                      window.scrollTo(0, 0);
+                                    });
+                                  }} to="/accreditations-and-quality">
+                                    <span className="elementor-icon-list-text">
+                                      شهادات الجودة
+                                    </span>
+                                  </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
                                   <a href="#">

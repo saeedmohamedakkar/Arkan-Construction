@@ -55,7 +55,7 @@ function PreviousWork() {
                 <section className="hero-section  ">
                     <div className="container">
                         <div className="hero-content">
-                            <span className="badge ">إرث من التميز الهندسي</span>
+                            <span className="brand-badge ">إرث من التميز الهندسي</span>
 
                             <h1 className="hero-title fixingAlignment">سجل حافل بالإنجازات.. مشاريع استراتيجية تنهض بالوطن.</h1>
 

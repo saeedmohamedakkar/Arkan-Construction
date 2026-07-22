@@ -719,3 +719,14 @@ body {
     background-color: #2501884b !important;
     color: white !important;
 }
+
+.brand-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

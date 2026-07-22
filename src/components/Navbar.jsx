@@ -138,7 +138,14 @@ export default function Navbar() {
                                 </Link>
                               </li>
                               <li id="menu-item-271" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-271">
-                                <a href="#"><span className="hover-text" data-name="الاعتمادات والجودة">الاعتمادات والجودة</span></a>
+                                <Link to="/accreditations-and-quality">
+                                  <span
+                                    className="hover-text"
+                                    data-name="الاعتمادات والجودة"
+                                  >
+                                    الاعتمادات والجودة
+                                  </span>
+                                </Link>
                               </li>
 
                               <li
@@ -270,7 +277,7 @@ export default function Navbar() {
                   </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73">
-                  {/* <a href="#">سابقة الأعمال</a> */}
+                
                   <Link to="/previous-work">سابقة الأعمال</Link>
                   {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[3])} className={`dropdown-toggle${openDropdowns[3] ? ' toggled-on' : ''}`} onClick={toggleDropdown(3)} />
                   <ul className="sub-menu" style={{ display: openDropdowns[3] ? 'block' : 'none' }}>
@@ -280,7 +287,10 @@ export default function Navbar() {
                   </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-271">
-                  <a href="#">الاعتمادات والجودة</a>
+                
+                  <Link to="/accreditations-and-quality">
+                    الاعتمادات والجودة
+                  </Link>
                   {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[4])} className={`dropdown-toggle${openDropdowns[4] ? ' toggled-on' : ''}`} onClick={toggleDropdown(4)} />
                   <ul className="sub-menu" style={{ display: openDropdowns[4] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2573"><a href="#">شهادات الجودة</a></li>
@@ -289,7 +299,7 @@ export default function Navbar() {
                   </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77">
-                  {/* <a href="#">اتصل بنا</a> */}
+          
                   <Link to="/contact">
                     <span className="hover-text" data-name="اتصل بنا">
                       اتصل بنا

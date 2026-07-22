@@ -61,17 +61,7 @@
   flex: 1;
 }
 
-.portfolio-page .badge {
-  display: inline-block;
-  padding: 6px 12px;
-  background-color: #e0e7ff;
-  color: #123A7A;
-  border-radius: 4px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  
-}
+
 
 .portfolio-page .hero-content h1 {
   font-size: 2.5rem;
@@ -413,4 +403,15 @@
 !important; border-radius: 50px; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; -o-border-radius: 
     50px;margin:0 10px 0 10px }
 
-/* #a7adb571 */
+
+
+.portfolio-page .brand-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
