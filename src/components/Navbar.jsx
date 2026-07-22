@@ -130,7 +130,12 @@ export default function Navbar() {
                                 </Link>
                               </li>
                               <li id="menu-item-73" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73">
-                                <a href="#"><span className="hover-text" data-name="سابقة الأعمال">سابقة الأعمال</span></a>
+
+                                <Link to="/previous-work">
+                                  <span className="hover-text" data-name="سابقة الأعمال">
+                                    سابقة الأعمال
+                                  </span>
+                                </Link>
                               </li>
                               <li id="menu-item-271" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-271">
                                 <a href="#"><span className="hover-text" data-name="الاعتمادات والجودة">الاعتمادات والجودة</span></a>
@@ -242,20 +247,20 @@ export default function Navbar() {
                   </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71">
-                 
+
                   <Link to="/who-we-are">من نحن</Link>
 
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72">
-                 
-                    <Link
-                                  to="/services"
 
-                                >
-                                  <span className="hover-text" data-name="خدماتنا وحلولنا">
-                                    خدماتنا وحلولنا
-                                  </span>
-                                </Link>
+                  <Link
+                    to="/services"
+
+                  >
+                    <span className="hover-text" data-name="خدماتنا وحلولنا">
+                      خدماتنا وحلولنا
+                    </span>
+                  </Link>
                   {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[2])} className={`dropdown-toggle${openDropdowns[2] ? ' toggled-on' : ''}`} onClick={toggleDropdown(2)} />
                   <ul className="sub-menu" style={{ display: openDropdowns[2] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568"><a href="#">تجهيز المنشآت المصرفية</a></li>
@@ -265,7 +270,8 @@ export default function Navbar() {
                   </ul> */}
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73">
-                  <a href="#">سابقة الأعمال</a>
+                  {/* <a href="#">سابقة الأعمال</a> */}
+                  <Link to="/previous-work">سابقة الأعمال</Link>
                   {/* <button type="button" aria-label="Open dropdown" aria-expanded={Boolean(openDropdowns[3])} className={`dropdown-toggle${openDropdowns[3] ? ' toggled-on' : ''}`} onClick={toggleDropdown(3)} />
                   <ul className="sub-menu" style={{ display: openDropdowns[3] ? 'block' : 'none' }}>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-4709"><a href="#">سابقة الأعمال</a></li>

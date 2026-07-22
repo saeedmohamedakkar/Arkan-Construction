@@ -9,6 +9,7 @@ const WhoWeAre = () => {
 
         <>
 
+  <div className="who-we-are-page">
 
             <div className="root ">
 
@@ -256,7 +257,7 @@ const WhoWeAre = () => {
 
 
 
-
+   </div>
 
 
 

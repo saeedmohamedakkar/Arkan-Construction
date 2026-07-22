@@ -180,11 +180,16 @@ export default function Footer() {
                                   </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
-                                  <a href="#">
+
+                                  <Link onClick={() => {
+                                    requestAnimationFrame(() => {
+                                      window.scrollTo(0, 0);
+                                    });
+                                  }} to="/previous-work">
                                     <span className="elementor-icon-list-text">
                                       سابقة الأعمال
                                     </span>
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
                                   <a href="#">
