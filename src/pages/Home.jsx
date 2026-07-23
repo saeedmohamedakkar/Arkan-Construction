@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 export default function Home() {
 
     return (
-      
+
 
 
 
@@ -1145,354 +1145,510 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                {/* Projects Section */}
-                                <div
-                                    className="elementor-element elementor-element-bbbb121 e-con-full e-flex e-con e-parent e-lazyloaded"
-                                    data-id="bbbb121"
-                                    data-element_type="container"
-                                    data-settings='{"background_background":"classic"}'
-                                    style={{ position: "relative" }}
-                                >
-                                    {/* Project 1 - Prince Sultan Military Medical City */}
-                                    <div
-                                        className="elementor-element elementor-element-2fa2118 e-con-full e-flex e-con e-child elementor-sticky"
-                                        data-id="2fa2118"
-                                        data-element_type="container"
-                                        data-settings='{"background_background":"classic","sticky_on":["desktop","laptop","tablet_extra","tablet"],"sticky_parent":"yes","sticky":"bottom","sticky_offset":0,"sticky_effects_offset":0}'
-                                    >
-                                        <div
-                                            className="elementor-element elementor-element-ba56f04 e-flex e-con-boxed e-con e-child"
-                                            data-id="ba56f04"
-                                            data-element_type="container"
-                                        >
-                                            <div className="e-con-inner">
-                                                {/* Projects Scrolling Banner */}
-                                                <div
-                                                    className="elementor-element elementor-element-9106a2f box-width-yes elementor-widget__width-initial animated-fast spaciaz-scrolling-ltr elementor-widget elementor-widget-spaciaz-slide-scrolling animated opal-helix"
-                                                    data-id="9106a2f"
-                                                    data-element_type="widget"
-                                                    data-settings='{"_animation":"opal-helix"}'
-                                                    data-widget_type="spaciaz-slide-scrolling.default"
-                                                >
-                                                    <div className="elementor-widget-container">
-                                                        <div className="elementor-scrolling">
-                                                            <div className="elementor-scrolling-wrapper">
-                                                                {[...Array(5)].map((_, i) => (
-                                                                    <div
-                                                                        key={i}
-                                                                        className="elementor-scrolling-inner"
-                                                                    >
+                                {/* Projects start here  Section */}
+                                <div>
+
+                                    <div className="elementor-element elementor-element-bbbb121 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="bbbb121" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style={{ position: 'relative' }}>
+
+                                        <div className="elementor-element elementor-element-2fa2118 e-con-full e-flex e-con e-child elementor-sticky" data-id="2fa2118" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet_extra&quot;,&quot;tablet&quot;],&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}" style={{}}>
+
+                                            <div className="elementor-element elementor-element-ba56f04 e-flex e-con-boxed e-con e-child" data-id="ba56f04" data-element_type="container">
+
+                                                <div className="e-con-inner">
+
+                                                    <div className="elementor-element elementor-element-9106a2f box-width-yes elementor-widget__width-initial animated-fast spaciaz-scrolling-ltr elementor-widget elementor-widget-spaciaz-slide-scrolling animated opal-helix" data-id="9106a2f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;opal-helix&quot;}" data-widget_type="spaciaz-slide-scrolling.default">
+
+                                                        <div className="elementor-widget-container">
+
+                                                            <div className="elementor-scrolling">
+
+                                                                <div className="elementor-scrolling-wrapper">
+
+                                                                    <div className="elementor-scrolling-inner">
+
                                                                         <div className="elementor-scrolling-item">
+
                                                                             <div className="elementor-scrolling-item-inner">
+
                                                                                 <div className="scrolling-title elementor-repeater-item-3eace46">
-                                                                                    <span>سابقة الأعمال</span>
-                                                                                </div>
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
                                                                             </div>
+
                                                                         </div>
+
                                                                         <div className="elementor-scrolling-item">
+
                                                                             <div className="elementor-scrolling-item-inner">
+
                                                                                 <div className="scrolling-title elementor-repeater-item-9398599">
-                                                                                    <span>·</span>
-                                                                                </div>
+
+                                                                                    <span>·</span>                                          </div>
+
                                                                             </div>
+
                                                                         </div>
+
                                                                         <div className="elementor-scrolling-item">
+
                                                                             <div className="elementor-scrolling-item-inner">
+
                                                                                 <div className="scrolling-title elementor-repeater-item-18b9ba4">
-                                                                                    <span>سابقة الأعمال</span>
-                                                                                </div>
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
                                                                             </div>
+
                                                                         </div>
+
                                                                         <div className="elementor-scrolling-item">
+
                                                                             <div className="elementor-scrolling-item-inner">
+
                                                                                 <div className="scrolling-title elementor-repeater-item-194a249">
-                                                                                    <span>·</span>
-                                                                                </div>
+
+                                                                                    <span>·</span>                                          </div>
+
                                                                             </div>
+
                                                                         </div>
-                                                                    </div>
-                                                                ))}
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
 
-                                                <div
-                                                    className="elementor-element elementor-element-1bd2156 elementor-widget__width-initial animated-fast elementor-widget elementor-widget-heading animated opal-move-up"
-                                                    data-id="1bd2156"
-                                                    data-element_type="widget"
-                                                    data-settings='{"_animation":"opal-move-up"}'
-                                                    data-widget_type="heading.default"
-                                                >
-                                                    <div className="elementor-widget-container">
-                                                        <h2 className="elementor-heading-title elementor-size-default fixingAlignment">
-                                                            مشاريع استراتيجية نفخر بتنفيذها
-                                                        </h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        {/* Project Card 1 */}
-                                        <div
-                                            className="elementor-element elementor-element-3a9d489 elementor-project-style-6 elementor-widget__width-inherit overflow-to-none elementor-widget elementor-widget-spaciaz-projects"
-                                            data-id="3a9d489"
-                                            data-element_type="widget"
-                                            data-widget_type="spaciaz-projects.default"
-                                        >
-                                            <div className="elementor-widget-container">
-                                                <div className="elementor-project-wrapper">
-                                                    <div className="d-grid">
-                                                        <div className="grid-item">
-                                                            <div className="project-item project-style-6">
-                                                                <div className="project-content fixingAlignment">
-                                                                    <div className="project-location">
-                                                                        <a href="#" rel="tag">
-                                                                            الرياض، المملكة العربية السعودية
-                                                                        </a>
                                                                     </div>
-                                                                    <h4 className="project-title delta">
-                                                                        <a href="#">
-                                                                            مدينة الأمير سلطان الطبية العسكرية
-                                                                        </a>
-                                                                    </h4>
+
+                                                                    <div className="elementor-scrolling-inner">
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-3eace46">
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-9398599">
+
+                                                                                    <span>·</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-18b9ba4">
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-194a249">
+
+                                                                                    <span>·</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div className="elementor-scrolling-inner">
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-3eace46">
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-9398599">
+
+                                                                                    <span>·</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-18b9ba4">
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-194a249">
+
+                                                                                    <span>·</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div className="elementor-scrolling-inner">
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-3eace46">
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-9398599">
+
+                                                                                    <span>·</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-18b9ba4">
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-194a249">
+
+                                                                                    <span>·</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div className="elementor-scrolling-inner">
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-3eace46">
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-9398599">
+
+                                                                                    <span>·</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-18b9ba4">
+
+                                                                                    <span>سابقة الأعمال</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div className="elementor-scrolling-item">
+
+                                                                            <div className="elementor-scrolling-item-inner">
+
+                                                                                <div className="scrolling-title elementor-repeater-item-194a249">
+
+                                                                                    <span>·</span>                                          </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
                                                                 </div>
-                                                                <div className="project-post-thumbnail">
-                                                                    <div className="project-status">
-                                                                        <a href="#" rel="tag">
-                                                                            قيد التنفيذ
-                                                                        </a>
-                                                                    </div>
-                                                                    <img
-                                                                        loading="lazy"
-                                                                        decoding="async"
-                                                                        width="1920"
-                                                                        height="1412"
-                                                                        src="/assets/project_9.jpg"
-                                                                        className="attachment-full size-full wp-post-image"
-                                                                        alt=""
-                                                                    />
-                                                                </div>
+
                                                             </div>
+
                                                         </div>
+
                                                     </div>
+
+                                                    <div className="margB elementor-element elementor-element-1bd2156 elementor-widget__width-initial animated-fast elementor-widget elementor-widget-heading animated opal-move-up" data-id="1bd2156" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;opal-move-up&quot;}" data-widget_type="heading.default">
+
+                                                        <div className="elementor-widget-container">
+
+                                                            <h2 className="elementor-heading-title elementor-size-default fixingAlignment ">مشاريع استراتيجية نفخر بتنفيذها</h2>		
+                                                            		</div>
+
+                                                    </div>
+
                                                 </div>
+
                                             </div>
+
+                                            <div className="elementor-element elementor-element-3a9d489 elementor-project-style-6 elementor-widget__width-inherit overflow-to-none elementor-widget elementor-widget-spaciaz-projects" data-id="3a9d489" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:3,&quot;spaceBetween&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;spaceBetween_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_tablet_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_mobile_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;enable_scrollbar&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;loopAdditionalSlides&quot;:0,&quot;speed&quot;:500}" data-widget_type="spaciaz-projects.default">
+
+                                                <div className="elementor-widget-container">
+
+                                                    <div className="elementor-project-wrapper">
+
+                                                        <div className="d-grid">
+
+                                                            <div className="grid-item">
+
+                                                                <div className="project-item project-style-6">
+
+                                                                    <div className="project-content fixingAlignment">
+
+                                                                        <div className="project-location">
+
+                                                                            <a href="#" rel="tag">الرياض، المملكة العربية السعودية</a></div>        <h4 className="project-title delta"><a href="#">مدينة الأمير سلطان الطبية العسكرية</a></h4>
+
+                                                                    </div>
+
+                                                                    <div className="project-post-thumbnail">
+
+                                                                        <div className="project-status"><a href="#" rel="tag">قيد التنفيذ</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1412} src="/assets/project_9.jpg" className="attachment-full size-full wp-post-image" alt />          </div>{/* .post-thumbnail */}
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div className="elementor-element elementor-element-97915e4 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-heading" data-id="97915e4" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+
+                                                <div className="elementor-widget-container">
+
+                                                    <h1 className="elementor-heading-title elementor-size-default">01</h1>				</div>
+
+                                            </div>
+
                                         </div>
 
-                                        <div
-                                            className="elementor-element elementor-element-97915e4 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-heading"
-                                            data-id="97915e4"
-                                            data-element_type="widget"
-                                            data-settings='{"_position":"absolute"}'
-                                            data-widget_type="heading.default"
-                                        >
-                                            <div className="elementor-widget-container">
-                                                <h1 className="elementor-heading-title elementor-size-default">
-                                                    01
-                                                </h1>
+                                        <div className="elementor-element elementor-element-0c6516e e-con-full e-flex e-con e-child elementor-sticky" data-id="0c6516e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet_extra&quot;,&quot;tablet&quot;],&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}" style={{}}>
+
+                                            <div className="elementor-element elementor-element-3695584 elementor-project-style-6 elementor-widget__width-inherit overflow-to-none elementor-widget elementor-widget-spaciaz-projects" data-id={3695584} data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:3,&quot;spaceBetween&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;spaceBetween_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_tablet_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_mobile_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;enable_scrollbar&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;loopAdditionalSlides&quot;:0,&quot;speed&quot;:500}" data-widget_type="spaciaz-projects.default">
+
+                                                <div className="elementor-widget-container">
+
+                                                    <div className="elementor-project-wrapper">
+
+                                                        <div className="d-grid">
+
+                                                            <div className="grid-item">
+
+                                                                <div className="project-item project-style-6">
+
+                                                                    <div className="project-content fixingAlignment">
+
+                                                                        <div className="project-location">
+
+                                                                            <a href="#" rel="tag">الرياض، المملكة العربية السعودية</a></div>        <h4 className="project-title delta"><a href="#">مصرف الراجحي</a></h4>
+
+                                                                    </div>
+
+                                                                    <div className="project-post-thumbnail">
+
+                                                                        <div className="project-status"><a href="#" rel="tag">مكتمل</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1415} src="/assets/project_6.jpg" className="attachment-full size-full wp-post-image" alt />          </div>{/* .post-thumbnail */}
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
                                             </div>
+
+                                            <div className="elementor-element elementor-element-826ead7 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-heading" data-id="826ead7" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+
+                                                <div className="elementor-widget-container">
+
+                                                    <h1 className="elementor-heading-title elementor-size-default">02</h1>				</div>
+
+                                            </div>
+
                                         </div>
+
+                                        <div className="elementor-element elementor-element-a4b0528 e-con-full e-flex e-con e-child elementor-sticky" data-id="a4b0528" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet_extra&quot;,&quot;tablet&quot;],&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}" style={{}}>
+
+                                            <div className="elementor-element elementor-element-bd941b2 elementor-project-style-6 elementor-widget__width-inherit overflow-to-none elementor-widget elementor-widget-spaciaz-projects" data-id="bd941b2" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:3,&quot;spaceBetween&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;spaceBetween_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_tablet_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_mobile_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;enable_scrollbar&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;loopAdditionalSlides&quot;:0,&quot;speed&quot;:500}" data-widget_type="spaciaz-projects.default">
+
+                                                <div className="elementor-widget-container">
+
+                                                    <div className="elementor-project-wrapper">
+
+                                                        <div className="d-grid">
+
+                                                            <div className="grid-item">
+
+                                                                <div className="project-item project-style-6">
+
+                                                                    <div className="project-content fixingAlignment">
+
+                                                                        <div className="project-location">
+
+                                                                            <a href="#" rel="tag">الرياض، المملكة العربية السعودية</a></div>        <h4 className="project-title delta"><a href="#">مسجد الريمال</a></h4>
+
+                                                                    </div>
+
+                                                                    <div className="project-post-thumbnail">
+
+                                                                        <div className="project-status"><a href="#" rel="tag">قيد التنفيذ</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1361} src="/assets/project_2.jpg" className="attachment-full size-full wp-post-image" alt />          </div>{/* .post-thumbnail */}
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div className="elementor-element elementor-element-14149e1 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-heading" data-id="14149e1" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+
+                                                <div className="elementor-widget-container">
+
+                                                    <h1 className="elementor-heading-title elementor-size-default">03</h1>				</div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div className="elementor-element elementor-element-5f774e4 e-con-full e-flex e-con e-child elementor-sticky" data-id="5f774e4" data-element_type="container" data-settings="{&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet_extra&quot;,&quot;tablet&quot;],&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}" style={{}}>
+
+                                            <div className="elementor-element elementor-element-630dd46 elementor-project-style-6 elementor-widget__width-inherit overflow-to-none elementor-widget elementor-widget-spaciaz-projects" data-id="630dd46" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:3,&quot;spaceBetween&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;spaceBetween_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_tablet_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_mobile_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;spaceBetween_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;enable_scrollbar&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;loopAdditionalSlides&quot;:0,&quot;speed&quot;:500}" data-widget_type="spaciaz-projects.default">
+
+                                                <div className="elementor-widget-container">
+
+                                                    <div className="elementor-project-wrapper">
+
+                                                        <div className="d-grid">
+
+                                                            <div className="grid-item">
+
+                                                                <div className="project-item project-style-6">
+
+                                                                    <div className="project-content fixingAlignment">
+
+                                                                        <div className="project-location">
+
+                                                                            <a href="#" rel="tag">الرياض، المملكة العربية السعودية</a></div>        <h4 className="project-title delta"></h4>
+
+                                                                    </div>
+
+                                                                    <div className="project-post-thumbnail">
+
+                                                                        <div className="project-status"><a href="#" rel="tag">قيد التنفيذ</a></div>
+
+                                                                        <img loading="lazy" decoding="async" width={1920} height={1080} src="/assets/project_5.jpg" className="attachment-full size-full wp-post-image" alt="img" />          </div>{/* .post-thumbnail */}
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div className="elementor-element elementor-element-aadd1d2 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-heading" data-id="aadd1d2" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+
+                                                <div className="elementor-widget-container">
+
+                                                    <h1 className="elementor-heading-title elementor-size-default">04</h1>				</div>
+
+                                            </div>
+
+                                        </div>
+
                                     </div>
 
-                                    {/* Project 2 - Al Rajhi Bank */}
-                                    <div
-                                        className="elementor-element elementor-element-0c6516e e-con-full e-flex e-con e-child elementor-sticky"
-                                        data-id="0c6516e"
-                                        data-element_type="container"
-                                        data-settings='{"background_background":"classic","sticky_on":["desktop","laptop","tablet_extra","tablet"],"sticky_parent":"yes","sticky":"bottom","sticky_offset":0,"sticky_effects_offset":0}'
-                                    >
-                                        <div
-                                            className="elementor-element elementor-element-3695584 elementor-project-style-6 elementor-widget__width-inherit overflow-to-none elementor-widget elementor-widget-spaciaz-projects"
-                                            data-id="3695584"
-                                            data-element_type="widget"
-                                            data-widget_type="spaciaz-projects.default"
-                                        >
-                                            <div className="elementor-widget-container">
-                                                <div className="elementor-project-wrapper">
-                                                    <div className="d-grid">
-                                                        <div className="grid-item">
-                                                            <div className="project-item project-style-6">
-                                                                <div className="project-content fixingAlignment">
-                                                                    <div className="project-location">
-                                                                        <a href="#" rel="tag">
-                                                                            الرياض، المملكة العربية السعودية
-                                                                        </a>
-                                                                    </div>
-                                                                    <h4 className="project-title delta">
-                                                                        <a href="#">مصرف الراجحي</a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div className="project-post-thumbnail">
-                                                                    <div className="project-status">
-                                                                        <a href="#" rel="tag">
-                                                                            مكتمل
-                                                                        </a>
-                                                                    </div>
-                                                                    <img
-                                                                        loading="lazy"
-                                                                        decoding="async"
-                                                                        width="1920"
-                                                                        height="1415"
-                                                                        src="/assets/project_6.jpg"
-                                                                        className="attachment-full size-full wp-post-image"
-                                                                        alt=""
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div
-                                            className="elementor-element elementor-element-826ead7 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-heading"
-                                            data-id="826ead7"
-                                            data-element_type="widget"
-                                            data-settings='{"_position":"absolute"}'
-                                            data-widget_type="heading.default"
-                                        >
-                                            <div className="elementor-widget-container">
-                                                <h1 className="elementor-heading-title elementor-size-default">
-                                                    02
-                                                </h1>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    {/* Project 3 - Al Raymal Mosque */}
-                                    <div
-                                        className="elementor-element elementor-element-a4b0528 e-con-full e-flex e-con e-child elementor-sticky"
-                                        data-id="a4b0528"
-                                        data-element_type="container"
-                                        data-settings='{"background_background":"classic","sticky":"bottom","sticky_on":["desktop","laptop","tablet_extra","tablet"],"sticky_parent":"yes","sticky_offset":0,"sticky_effects_offset":0}'
-                                    >
-                                        <div
-                                            className="elementor-element elementor-element-bd941b2 elementor-project-style-6 elementor-widget__width-inherit overflow-to-none elementor-widget elementor-widget-spaciaz-projects"
-                                            data-id="bd941b2"
-                                            data-element_type="widget"
-                                            data-widget_type="spaciaz-projects.default"
-                                        >
-                                            <div className="elementor-widget-container">
-                                                <div className="elementor-project-wrapper">
-                                                    <div className="d-grid">
-                                                        <div className="grid-item">
-                                                            <div className="project-item project-style-6">
-                                                                <div className="project-content fixingAlignment">
-                                                                    <div className="project-location">
-                                                                        <a href="#" rel="tag">
-                                                                            الرياض، المملكة العربية السعودية
-                                                                        </a>
-                                                                    </div>
-                                                                    <h4 className="project-title delta">
-                                                                        <a href="#">مسجد الريمال</a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div className="project-post-thumbnail">
-                                                                    <div className="project-status">
-                                                                        <a href="#" rel="tag">
-                                                                            قيد التنفيذ
-                                                                        </a>
-                                                                    </div>
-                                                                    <img
-                                                                        loading="lazy"
-                                                                        decoding="async"
-                                                                        width="1920"
-                                                                        height="1361"
-                                                                        src="/assets/project_2.jpg"
-                                                                        className="attachment-full size-full wp-post-image"
-                                                                        alt=""
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            className="elementor-element elementor-element-14149e1 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-heading"
-                                            data-id="14149e1"
-                                            data-element_type="widget"
-                                            data-settings='{"_position":"absolute"}'
-                                            data-widget_type="heading.default"
-                                        >
-                                            <div className="elementor-widget-container">
-                                                <h1 className="elementor-heading-title elementor-size-default">
-                                                    03
-                                                </h1>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Project 4 - Infrastructure */}
-                                    <div
-                                        className="elementor-element elementor-element-5f774e4 e-con-full e-flex e-con e-child elementor-sticky"
-                                        data-id="5f774e4"
-                                        data-element_type="container"
-                                        data-settings='{"sticky":"bottom","sticky_on":["desktop","laptop","tablet_extra","tablet"],"sticky_parent":"yes","sticky_offset":0,"sticky_effects_offset":0}'
-                                    >
-                                        <div
-                                            className="elementor-element elementor-element-630dd46 elementor-project-style-6 elementor-widget__width-inherit overflow-to-none elementor-widget elementor-widget-spaciaz-projects"
-                                            data-id="630dd46"
-                                            data-element_type="widget"
-                                            data-widget_type="spaciaz-projects.default"
-                                        >
-                                            <div className="elementor-widget-container">
-                                                <div className="elementor-project-wrapper">
-                                                    <div className="d-grid">
-                                                        <div className="grid-item">
-                                                            <div className="project-item project-style-6">
-                                                                <div className="project-content fixingAlignment">
-                                                                    <div className="project-location">
-                                                                        <a href="#" rel="tag">
-                                                                            الرياض، المملكة العربية السعودية
-                                                                        </a>
-                                                                    </div>
-                                                                    <h4 className="project-title delta">
-                                                                        <a href="#">مشاريع البنية التحتية</a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div className="project-post-thumbnail">
-                                                                    <div className="project-status">
-                                                                        <a href="#" rel="tag">
-                                                                            قيد التنفيذ
-                                                                        </a>
-                                                                    </div>
-                                                                    <img
-                                                                        loading="lazy"
-                                                                        decoding="async"
-                                                                        width="1920"
-                                                                        height="1080"
-                                                                        src="/assets/project_5.jpg"
-                                                                        className="attachment-full size-full wp-post-image"
-                                                                        alt="img"
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            className="elementor-element elementor-element-aadd1d2 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-heading"
-                                            data-id="aadd1d2"
-                                            data-element_type="widget"
-                                            data-settings='{"_position":"absolute"}'
-                                            data-widget_type="heading.default"
-                                        >
-                                            <div className="elementor-widget-container">
-                                                <h1 className="elementor-heading-title elementor-size-default">
-                                                    04
-                                                </h1>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
+
+
+                                {/* /////////////////////////////////////////////////////////////// */}
+
+
+
+
 
                                 {/* Why Choose Us Section */}
                                 <div
