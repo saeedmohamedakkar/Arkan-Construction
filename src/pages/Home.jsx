@@ -1467,7 +1467,7 @@ export default function Home() {
 
                                                                     <div className="project-post-thumbnail">
 
-                                                                        <div className="project-status"><a href="#" rel="tag">قيد التنفيذ</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1412} src="/assets/project_9.jpg" className="attachment-full size-full wp-post-image" alt />          </div>{/* .post-thumbnail */}
+                                                                        <div className="project-status"><a href="#" rel="tag">قيد التنفيذ</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1412} src="/assets/project_9.jpg" className="attachment-full size-full wp-post-image" alt="img" />          </div>{/* .post-thumbnail */}
 
                                                                 </div>
 
@@ -1515,7 +1515,7 @@ export default function Home() {
 
                                                                     <div className="project-post-thumbnail">
 
-                                                                        <div className="project-status"><a href="#" rel="tag">مكتمل</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1415} src="/assets/project_6.jpg" className="attachment-full size-full wp-post-image" alt />          </div>{/* .post-thumbnail */}
+                                                                        <div className="project-status"><a href="#" rel="tag">مكتمل</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1415} src="/assets/project_6.jpg" className="attachment-full size-full wp-post-image" alt="img" />          </div>{/* .post-thumbnail */}
 
                                                                 </div>
 
@@ -1563,7 +1563,7 @@ export default function Home() {
 
                                                                     <div className="project-post-thumbnail">
 
-                                                                        <div className="project-status"><a href="#" rel="tag">قيد التنفيذ</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1361} src="/assets/project_2.jpg" className="attachment-full size-full wp-post-image" alt />          </div>{/* .post-thumbnail */}
+                                                                        <div className="project-status"><a href="#" rel="tag">قيد التنفيذ</a></div>                    <img loading="lazy" decoding="async" width={1920} height={1361} src="/assets/project_2.jpg" className="attachment-full size-full wp-post-image" alt="img" />          </div>{/* .post-thumbnail */}
 
                                                                 </div>
 
@@ -2320,13 +2320,13 @@ export default function Home() {
                                                                                 d="M37.1852 82.6929C37.3986 82.5634 37.6382 82.5018 37.9041 82.5018C38.2521 82.5018 38.541 82.5828 38.7774 82.7415C39.0104 82.9035 39.1811 83.1172 39.2796 83.3893H39.6801C39.5587 83.0039 39.3453 82.7026 39.0465 82.4824C38.7478 82.2621 38.367 82.1552 37.9074 82.1552C37.5561 82.1552 37.2443 82.2362 36.9718 82.3982C36.696 82.5601 36.4859 82.7869 36.3317 83.0784C36.1806 83.3699 36.1051 83.7035 36.1051 84.076C36.1051 84.4452 36.1806 84.7789 36.3317 85.0671C36.4827 85.3587 36.696 85.5854 36.9718 85.7474C37.2476 85.9093 37.5594 85.9935 37.9074 85.9935C38.367 85.9935 38.7445 85.8834 39.0465 85.6664C39.3453 85.4461 39.5587 85.1449 39.6801 84.7594H39.2796C39.1779 85.0315 39.0104 85.2453 38.7774 85.4073C38.541 85.5692 38.2521 85.6469 37.9041 85.6469C37.6415 85.6469 37.4019 85.5822 37.1852 85.4558C36.9718 85.3263 36.8011 85.1449 36.6796 84.9084C36.5582 84.672 36.4958 84.3934 36.4958 84.076C36.4958 83.7586 36.5582 83.48 36.6796 83.2436C36.8011 83.0039 36.9718 82.8193 37.1852 82.6929Z"
                                                                                 fill="black"
                                                                             />
-
+{/* 
                                                                             <path d="M45.2281..." fill="black" />
                                                                             <path d="M50.8483..." fill="black" />
                                                                             <path d="M56.8295..." fill="black" />
                                                                             <path d="M61.9967..." fill="black" />
                                                                             <path d="M69.0055..." fill="black" />
-                                                                            <path d="M73.5194..." fill="black" />
+                                                                            <path d="M73.5194..." fill="black" /> */}
                                                                         </svg>
                                                                     </div>
                                                                 </div>

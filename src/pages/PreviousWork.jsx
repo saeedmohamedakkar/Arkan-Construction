@@ -59,7 +59,7 @@ function PreviousWork() {
 
                             <h1 className="hero-title fixingAlignment">سجل حافل بالإنجازات.. مشاريع استراتيجية تنهض بالوطن.</h1>
 
-                            <p ClassName="test fixingAlignment">
+                            <p className="test fixingAlignment">
                                 نفخر بتنفيذ مشاريع إنشائية وبنية تحتية معقدة بقيمة تجاوزت 50 مليون ريال،
                                 بالتعاون مع كبرى المؤسسات المالية والطبية والجهات الحكومية في المملكة.
                                 كل مشروع هو قصة نجاح نلتزم فيها بالدقة، الأمان، والجدول الزمني.
