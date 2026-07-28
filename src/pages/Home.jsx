@@ -2567,8 +2567,8 @@ export default function Home() {
                                                                         dir="ltr"
                                                                     >
                                                                         <form
-                                                                            action="/uploads/spaciaz/#wpcf7-f10-p41-o1"
-                                                                            method="post"
+                                                                            // action="/uploads/spaciaz/#wpcf7-f10-p41-o1"
+                                                                            // method="post"
                                                                             className="wpcf7-form init"
                                                                             aria-label="Contact form"
                                                                             noValidate
@@ -2691,7 +2691,7 @@ export default function Home() {
                                                                                     </p>
                                                                                 </div>
                                                                                 <div className="column-50 wpcf7-button">
-                                                                                    <div className="submit-btn enable-style-icon-yes">
+                                                                                   
                                                                                         <p>
                                                                                             <button
                                                                                                 type="submit"
@@ -2723,7 +2723,7 @@ export default function Home() {
                                                                                                 </span>
                                                                                             </button>
                                                                                         </p>
-                                                                                    </div>
+                                                                                   
                                                                                 </div>
                                                                             </div>
                                                                             <div

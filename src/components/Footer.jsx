@@ -72,18 +72,25 @@ export default function Footer() {
                     <div className="elementor-widget-container">
                       <div className="elementor-button-wrapper">
                         <div className="movingButton">
-                          <a
+                          
+                          <Link onClick={() => {
+                            requestAnimationFrame(() => {
+                              window.scrollTo(0, 0);
+                            });
+                          }}
                             className="elementor-button-link elementor-button"
-                            href="#"
-                            role="button">
+                            to="/contact"
+                            role="button"
+                          >
                             <span className="elementor-button-content-wrapper">
                               <span
                                 className="elementor-button-text"
-                                data-name="تحدث مع المكتب الفني الآن">
+                                data-name="تحدث مع المكتب الفني الآن"
+                              >
                                 <span>تحدث مع المكتب الفني الآن</span>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -192,11 +199,7 @@ export default function Footer() {
                                   </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
-                                  {/* <a href="#">
-                                    <span className="elementor-icon-list-text">
-                                      شهادات الجودة
-                                    </span>
-                                  </a> */}
+
                                   <Link onClick={() => {
                                     requestAnimationFrame(() => {
                                       window.scrollTo(0, 0);
@@ -215,11 +218,16 @@ export default function Footer() {
                                   </a>
                                 </li>
                                 <li className="elementor-icon-list-item">
-                                  <a href="#">
+
+                                  <Link onClick={() => {
+                                    requestAnimationFrame(() => {
+                                      window.scrollTo(0, 0);
+                                    });
+                                  }} to="/banking-institutions">
                                     <span className="elementor-icon-list-text">
                                       القطاع البنكي
                                     </span>
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
                                   <a href="#">
