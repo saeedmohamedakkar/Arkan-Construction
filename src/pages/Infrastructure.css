@@ -1,0 +1,298 @@
+ .infa-paeg :root {
+  --arkan-blue: #1E4FA8;
+  --arkan-blue-deep: #123A7A;
+  --arkan-charcoal: #111827;
+  --arkan-cement: #A7ADB5;
+  --white: #ffffff;
+  --text-main: #333333;
+}
+
+.infa-paeg * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.infa-paeg body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+  background-color: #f9fafb;
+}
+
+.infa-paeg .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.infa-paeg .section-padding {
+  padding: 100px 0;
+}
+
+.infa-paeg .section-title {
+  font-size: 2.5rem;
+  color: var(--arkan-blue-deep);
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.infa-paeg .section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--arkan-blue);
+  margin: 15px auto 0;
+}
+
+.infa-paeg .text-white {
+  color: var(--white);
+}
+
+.infa-paeg .text-white::after {
+  background: var(--arkan-cement);
+}
+
+/* Hero Section */
+.infa-paeg .hero-section {
+  position: relative;
+  height: 85vh;
+  min-height: 600px;
+  background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); /* Construction background */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+}
+
+.infa-paeg .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(18, 58, 122, 0.85), rgba(17, 24, 39, 0.9));
+  z-index: 1;
+}
+
+.infa-paeg .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.infa-paeg .hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.infa-paeg .hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infa-paeg .cta-button {
+  background-color: var(--arkan-blue);
+  color: var(--white);
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.infa-paeg .cta-button:hover {
+  background-color: var(--arkan-blue-deep);
+}
+
+/* Engineering Edge Section */
+.infa-paeg .edge-section {
+  background-color: var(--white);
+}
+
+.infa-paeg .edge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.infa-paeg .edge-card {
+  padding: 40px;
+  background: #f8fafc;
+  border-bottom: 4px solid var(--arkan-cement);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.infa-paeg .edge-card:hover {
+  transform: translateY(-10px);
+  border-bottom-color: var(--arkan-blue);
+}
+
+.infa-paeg .edge-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.infa-paeg .edge-card h3 {
+  color: var(--arkan-blue-deep);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Core Services Section */
+.infa-paeg .services-section {
+  background-color: var(--arkan-blue-deep);
+}
+
+.infa-paeg .services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.infa-paeg .service-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-right: 5px solid var(--arkan-blue);
+  display: flex;
+  align-items: center;
+}
+
+.infa-paeg .service-content h3 {
+  color: var(--white);
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.infa-paeg .service-content p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Proof Section */
+.infa-paeg .proof-section {
+  background-color: var(--white);
+}
+
+.infa-paeg .proof-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infa-paeg .proof-card {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.infa-paeg .proof-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--arkan-cement);
+  margin-left: 30px;
+  opacity: 0.5;
+  min-width: 80px;
+}
+
+.infa-paeg .proof-info h3 {
+  color: var(--arkan-blue-deep);
+  margin-bottom: 10px;
+}
+
+/* CRO Section */
+.infa-paeg .cro-section {
+  background-color: var(--arkan-charcoal);
+  color: var(--white);
+  text-align: center;
+}
+
+.infa-paeg .cro-content {
+  max-width: 800px;
+}
+
+.infa-paeg .cro-heading {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: var(--arkan-cement);
+}
+
+.infa-paeg .cro-text {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.infa-paeg .cta-button-secondary {
+  background-color: var(--arkan-blue);
+  color: var(--white);
+  padding: 20px 45px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.infa-paeg .cta-button-secondary:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.infa-paeg .assurance-text {
+  font-size: 1rem;
+  color: var(--arkan-cement);
+  font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .infa-paeg .edge-grid {
+    grid-template-columns: 1fr;
+  }
+  .infa-paeg .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .infa-paeg .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+
+.infa-paeg .my{margin-top: 20px;}
+
+
+ 
+
+@media (max-width: 768px) {
+  .infa-paeg .fixingWidth {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infa-paeg .fixingWidth {
+    font-size: 25px;
+  }
+}
+
+.infa-paeg .myBtn{margin-top: 50px;}
+
+ 

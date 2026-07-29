@@ -78,6 +78,10 @@ import OurServices from "./pages/OurServices";
 import PreviousWork from "./pages/PreviousWork";
 import AccreditationsAndQuality from "./pages/AccreditationsAndQuality";
 import BankingInstitutions from "./pages/BankingInstitutions";
+import HealthCare from "./pages/HealthCare";
+import Infrastructure from "./pages/Infrastructure";
+import MepSolutions from "./pages/MepSolutions";
+
 
 
 
@@ -128,7 +132,11 @@ function App() {
         <Route path="/services" element={<OurServices />} />
         <Route path="/previous-work" element={<PreviousWork />} />
         <Route path="/accreditations-and-quality" element={<AccreditationsAndQuality />} />
+        <Route path="/healthcare" element={<HealthCare />} />
         <Route path="/banking-institutions" element={<BankingInstitutions />} />
+        <Route path="/infrastructure" element={<Infrastructure />}/>
+        <Route path="/mep-solutions" element={<MepSolutions />} />
+        
         <Route path="*" element={<NotFound />} />
       </Routes>
 
