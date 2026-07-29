@@ -72,7 +72,7 @@ export default function Footer() {
                     <div className="elementor-widget-container">
                       <div className="elementor-button-wrapper">
                         <div className="movingButton">
-                          
+
                           <Link onClick={() => {
                             requestAnimationFrame(() => {
                               window.scrollTo(0, 0);
@@ -230,11 +230,16 @@ export default function Footer() {
                                   </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
-                                  <a href="#">
+
+                                  <Link onClick={() => {
+                                    requestAnimationFrame(() => {
+                                      window.scrollTo(0, 0);
+                                    });
+                                  }} to="/healthcare">
                                     <span className="elementor-icon-list-text">
                                       القطاع الطبي
                                     </span>
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -247,16 +252,21 @@ export default function Footer() {
                             <div className="elementor-widget-container">
                               <ul className="elementor-icon-list-items fixingAlignment">
                                 <li className="elementor-icon-list-item">
-                                  <a href="#">
+
+                                  <Link onClick={() => {
+                                    requestAnimationFrame(() => {
+                                      window.scrollTo(0, 0);
+                                    });
+                                  }} to="/infrastructure">
                                     <span className="elementor-icon-list-text">
                                       البنية التحتية
                                     </span>
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
 
                                   <Link
-                                    to="/services"
+                                    to="/mep-solutions"
                                     onClick={() => {
                                       requestAnimationFrame(() => {
                                         window.scrollTo(0, 0);
@@ -283,11 +293,16 @@ export default function Footer() {
                                   </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
-                                  <a href="#">
+                                   
+                                  <Link onClick={() => {
+                                    requestAnimationFrame(() => {
+                                      window.scrollTo(0, 0);
+                                    });
+                                  }} to="/contact">
                                     <span className="elementor-icon-list-text">
                                       طلب استشارة
                                     </span>
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li className="elementor-icon-list-item">
                                   <a href="#">

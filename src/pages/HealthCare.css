@@ -1,0 +1,246 @@
+ /* Home.css */
+:root {
+  --arkan-blue: #1E4FA8;
+  --arkan-blue-deep: #123A7A;
+  --arkan-charcoal: #111827;
+  --arkan-cement: #A7ADB5;
+  --white: #ffffff;
+  --gray-light: #f9fafb;
+}
+
+.healthcare-page * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.healthcare-page body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  text-align: right;
+  color: var(--arkan-charcoal);
+  line-height: 1.6;
+  background-color: var(--white);
+}
+
+.healthcare-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.healthcare-page .hero {
+  background: linear-gradient(135deg, var(--arkan-blue-deep) 0%, var(--arkan-blue) 100%);
+  color: var(--white);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.healthcare-page .hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.healthcare-page .hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.healthcare-page .btn-primary {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--arkan-blue-deep);
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.healthcare-page .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Features Section */
+.healthcare-page .features {
+  padding: 80px 0;
+  background-color: var(--gray-light);
+}
+
+.healthcare-page .section-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 48px;
+  color: var(--arkan-blue-deep);
+}
+
+.healthcare-page .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.healthcare-page .feature-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid var(--arkan-blue);
+}
+
+.healthcare-page .feature-card h3 {
+  color: var(--arkan-blue-deep);
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+/* Services Section */
+.healthcare-page .services {
+  padding: 80px 0;
+}
+
+.healthcare-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.healthcare-page .service-item {
+  padding: 24px;
+  border: 1px solid var(--arkan-cement);
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.healthcare-page .service-item:hover {
+  border-color: var(--arkan-blue);
+}
+
+.healthcare-page .service-item h4 {
+  color: var(--arkan-blue);
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+/* Success Story Section */
+.healthcare-page .success-story {
+  padding: 80px 0;
+  background-color: var(--arkan-charcoal);
+  color: var(--white);
+}
+
+.healthcare-page .story-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+}
+
+.healthcare-page .story-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.healthcare-page .story-stats {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.healthcare-page .stat-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.healthcare-page .stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--arkan-blue);
+}
+
+.healthcare-page .stat-label {
+  font-size: 0.875rem;
+  color: var(--arkan-cement);
+}
+
+/* CTA Section */
+.healthcare-page .final-cta {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.healthcare-page .cta-box {
+  background: var(--gray-light);
+  padding: 60px 40px;
+  border-radius: 20px;
+  border: 1px solid var(--arkan-cement);
+}
+
+.healthcare-page .cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--arkan-blue-deep);
+}
+
+.healthcare-page .cta-text {
+  font-size: 1.125rem;
+  margin-bottom: 32px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.healthcare-page .micro-copy {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: var(--arkan-cement);
+  font-weight: 500;
+}
+
+.healthcare-page .btn-secondary {
+  display: inline-block;
+  background-color: var(--arkan-blue);
+  color: var(--white);
+  padding: 18px 40px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.healthcare-page .btn-secondary:hover {
+  background-color: var(--arkan-blue-deep);
+}
+
+@media (max-width: 768px) {
+  .healthcare-page .hero-title { font-size: 2rem; }
+  .healthcare-page .section-title { font-size: 1.75rem; }
+  .healthcare-page .cta-title { font-size: 1.75rem; }
+}
+
+
+.healthcare-page .my-20{padding-top: 50px;}
+
+.healthcare-page .center{text-align: center;}
+
+.healthcare-page .fixingAlignment {
+  direction: rtl;
+  text-align: right;
+}
+
+.healthcare-page .testt{ background-color: #111827; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; }

@@ -31,7 +31,7 @@ const OurServices = () => {
         {
             id: 2,
             title: "قطاع الرعاية الصحية",
-            link: "/",
+            link: "/healthcare",
             description: "البنية التحتية الطبية المتكاملة، تشمل شبكات الغازات الطبية، وتجهيز غرف العمليات بأعلى معايير التعقيم والجودة.",
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="service-icon icons-color">
@@ -46,7 +46,7 @@ const OurServices = () => {
         },
         {
             id: 3,
-            link: "/",
+            link: "/infrastructure",
             title: "الإنشاءات والبنية التحتية",
             description: "تنفيذ المشاريع الضخمة، شبكات الصرف الصحي، تمديدات الكهرباء العامة، والطرق الحيوية بدقة هندسية متناهية.",
             icon: (
@@ -62,7 +62,7 @@ const OurServices = () => {
         },
         {
             id: 4,
-            link: "/",
+            link: "/mep-solutions",
             title: "الحلول الكهروميكانيكية MEP",
             description: "أنظمة التكييف HVAC، أنظمة مكافحة الحريق، والربط الذكي للمباني لضمان استدامة التشغيل وكفاءة الطاقة.",
             icon: (
